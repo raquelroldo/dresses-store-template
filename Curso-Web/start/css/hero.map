@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/hero.css",
+	"sources": [
+		"../scss/hero.scss"
+	],
+	"sourcesContent": [
+		".hero {\r\n\tbackground-position: center center;\r\n\tbackground-size: cover;\r\n\tbackground-repeat: no-repeat;\r\n\theight: 100%;\r\n\t.center {\r\n      max-width: 1280px;\r\n      width: 100%;\r\n      position:relative;\r\n      top: 50%;\r\n      left:50%;\r\n      transform:translate(-50%, -50%);\r\n      padding:0 5%;\r\n      text-align:center;\r\n\r\n      h1 {\r\n      font-size: 30px;\r\n      font-weight: 700;\r\n      display: block;\r\n      margin-bottom: 30px;\r\n      color: #FFF;\r\n      text-shadow:2px 2px 2px #000;\r\n      }\r\n      p {\r\n        font-size: 18px;\r\n        color:#848789;\r\n        line-height: 35px;\r\n      }\r\n  }\r\n}"
+	],
+	"mappings": ";AAAA,AAAA,KAAK,CAAC;EACL,mBAAmB,EAAE,aAAc;EACnC,eAAe,EAAE,KAAM;EACvB,iBAAiB,EAAE,SAAU;EAC7B,MAAM,EAAE,IAAK,GAyBb;;EA7BD,AAKC,KALI,CAKJ,OAAO,CAAC;IACH,SAAS,EAAE,MAAO;IAClB,KAAK,EAAE,IAAK;IACZ,QAAQ,EAAC,QAAS;IAClB,GAAG,EAAE,GAAI;IACT,IAAI,EAAC,GAAI;IACT,SAAS,EAAC,qBAAS;IACnB,OAAO,EAAC,IAAK;IACb,UAAU,EAAC,MAAO,GAerB;;IA5BH,AAeM,KAfD,CAKJ,OAAO,CAUF,EAAE,CAAC;MACH,SAAS,EAAE,IAAK;MAChB,WAAW,EAAE,GAAI;MACjB,OAAO,EAAE,KAAM;MACf,aAAa,EAAE,IAAK;MACpB,KAAK,EAAE,IAAK;MACZ,WAAW,EAAC,gBAAiB,GAC5B;;IAtBP,AAuBM,KAvBD,CAKJ,OAAO,CAkBF,CAAC,CAAC;MACA,SAAS,EAAE,IAAK;MAChB,KAAK,EAAC,OAAQ;MACd,WAAW,EAAE,IAAK,GACnB",
+	"names": []
+}

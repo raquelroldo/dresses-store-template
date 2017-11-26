@@ -1,0 +1,17 @@
+@import 'style.scss';
+@import 'hero.scss';
+@import 'reset.scss';
+@import 'intro.scss';
+@import 'font.scss';
+
+
+
+html {
+	position: relative;
+	height: 100%;
+}
+body {
+	position: relative;
+	height: 100%;
+	font-family: 'lato', sans-serif;
+}

@@ -1,0 +1,54 @@
+header {
+	width: 100%;
+	.wrapper {
+		width:1180px;
+		margin:0 auto;
+		nav {
+			height:116px;
+			width: 100%;
+			border-bottom:1px solid #e5e5e5;
+			padding: 54px 0 54px 0;
+			.basic{
+				float: left;
+				display: block;
+				ul {
+					li {
+						font-size: 15px;
+						display: inline-block;
+						margin:0 21px;
+						a{
+							text-decoration: none;
+							color: #303030;
+							padding:14px;							
+							&:hover {
+								color:#fff;
+								background:#222;
+							}	
+						}
+						&:first-child {
+							margin-left:0;
+						}	
+					}
+				}
+			}
+			.personal{
+				display: block;
+				float:right;
+				ul{	
+
+					li {
+						display: inline-block;
+						font-size: 15px;
+						margin:0 25px;
+						a {
+							color: #303030;							
+						}
+						&:last-child {
+							margin-right:0;
+						}	
+					}
+				}
+			}	
+		}
+	}
+}

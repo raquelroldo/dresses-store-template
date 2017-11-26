@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/intro.css",
+	"sources": [
+		"../scss/intro.scss"
+	],
+	"sourcesContent": [
+		".intro {\r\n\t\r\n\t.wrapper {\r\n\t\tmax-width: 1280px;\r\n\t\twidth: 100%;\r\n\t\tmargin: 0 auto;\r\n\t}\r\n}"
+	],
+	"mappings": ";AAAA,AAEC,MAFK,CAEL,QAAQ,CAAC;EACR,SAAS,EAAE,MAAO;EAClB,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,MAAO,GACf",
+	"names": []
+}

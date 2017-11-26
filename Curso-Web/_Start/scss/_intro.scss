@@ -1,0 +1,38 @@
+.intro {
+  background:#f7f7f7;
+  text-align: center;
+  padding:100px 0 100px 0;
+
+  .wrapper {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    padding:0 5%;
+    i {
+      color: #90d2b9;
+      font-size: 45px;
+      margin-bottom: 30px;
+      display: block;
+    }
+    h2 {
+      font-size: 18px;
+      color: #353738;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px;
+      color:#848789;
+      line-height: 35px;
+    }
+  }
+  &[data-align="left"] {
+    text-align: left;
+  }
+
+  &[data-align="right"] {
+    text-align: right;
+  }
+  
+}

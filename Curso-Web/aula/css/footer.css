@@ -1,0 +1,7 @@
+footer {
+  height: 251px;
+  display: inline-block; }
+  footer dl {
+    display: inline-block;
+    text-aling: left;
+    max-height: 162px; }

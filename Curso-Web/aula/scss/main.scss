@@ -1,0 +1,18 @@
+@import 'menu.scss';
+@import 'reset.scss';
+@import 'grid.scss';
+@import 'intro.scss';
+@import 'sign.scss';
+@import 'footer.scss';
+
+
+html {
+	background: #e5e5e5;
+	width: 1280px;
+	height: 2358px;
+	margin: 60px 155px 60px 155px; 
+}
+body {
+	background: #fff;
+	font-family:sans-serif;
+}

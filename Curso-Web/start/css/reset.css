@@ -1,0 +1,70 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 5, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 25, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+* {
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 29, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 33, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+body {
+  line-height: 1;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 40, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+strong {
+  font-weight: 700; }
+
+/* line 44, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 47, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 50, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+em {
+  font-style: italic; }
+
+/* line 53, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 58, C:/Users/Marcelo Severgnini/Desktop/Projeto raquel/start/scss/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*# sourceMappingURL=../css/reset.map */
