@@ -9,10 +9,16 @@ footer {
     vertical-align: top;
     font-size: 12px; }
     footer dl dt {
+      text-transform: uppercase;
       font-weight: bold;
       line-height: 25px; }
       footer dl dt dd {
         line-height: 20px; }
+        footer dl dt dd p {
+          vertical-align: center; }
+          footer dl dt dd p a {
+            border: 1px solid #606060;
+            box-sizing: border-box; }
     footer dl:first-child {
       margin-left: 32px; }
     footer dl:last-child {

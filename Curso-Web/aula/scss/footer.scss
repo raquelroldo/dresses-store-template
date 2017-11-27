@@ -3,7 +3,6 @@ footer {
 	text-align:left;
 
 	dl {
-
 		display:inline-block;
 		text-align:left;
 		max-height:162px;
@@ -11,12 +10,20 @@ footer {
 		vertical-align: top;
 		font-size: 12px;
 		dt {
+			text-transform:uppercase;
 			font-weight: bold;
 			line-height: 25px;
 			dd {
 				line-height: 20px;
 				a {
 					
+				}
+				p {
+					vertical-align:center;
+					a {
+						border: 1px solid #606060;
+						box-sizing:border-box;
+					}
 				}
 			}
 		}
