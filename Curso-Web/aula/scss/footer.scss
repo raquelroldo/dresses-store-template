@@ -1,19 +1,30 @@
 footer {
-	height:251px;
 	display:inline-block;
+	text-align:left;
+
 	dl {
+
 		display:inline-block;
-		text-aling:left;
+		text-align:left;
 		max-height:162px;
-
+		width:300px;
+		vertical-align: top;
+		font-size: 12px;
 		dt {
-			margin:150px;
+			font-weight: bold;
+			line-height: 25px;
 			dd {
-
+				line-height: 20px;
 				a {
-
+					
 				}
 			}
+		}
+		&:first-child {
+			margin-left: 32px;
+		}
+		&:last-child {
+			margin-right: 32px;
 		}
 	}
 }

@@ -1,7 +1,19 @@
 footer {
-  height: 251px;
-  display: inline-block; }
+  display: inline-block;
+  text-align: left; }
   footer dl {
     display: inline-block;
-    text-aling: left;
-    max-height: 162px; }
+    text-align: left;
+    max-height: 162px;
+    width: 300px;
+    vertical-align: top;
+    font-size: 12px; }
+    footer dl dt {
+      font-weight: bold;
+      line-height: 25px; }
+      footer dl dt dd {
+        line-height: 20px; }
+    footer dl:first-child {
+      margin-left: 32px; }
+    footer dl:last-child {
+      margin-right: 32px; }
