@@ -7,15 +7,17 @@
     .intro .wrapper .h h1 {
       color: #303030;
       text-transform: uppercase;
-      font-size: 55px;
+      font-size: 72px;
       margin-bottom: 37px; }
     .intro .wrapper .h h3 {
-      font-size: 25px;
+      font-family: georgia;
+      font-style: italic;
+      font-size: 24px;
       color: #606060;
       margin-bottom: 69px; }
     .intro .wrapper .h a {
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 14px;
       color: #303030;
       width: 230px;
       height: 60px;

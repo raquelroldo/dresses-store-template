@@ -1,19 +1,24 @@
 .sign {
-	display:block;
-	margin:auto;
-
+	
 	.wrapper{
-		text-align:center;
-		margin:147px 0 135px 0;
+		width: 1180px;
+		text-align: center;
+		margin: 147px 0 135px 0;
 		.h {
+
 			h2 {
 				text-transform: uppercase;
 				margin-bottom:22px;
-				font-size:29px;
+				font-size:36px;
+				font-weight: bold;
+				color: #303030;
 			}
 			h3 {
-				font-size:15px;
+				font-family: georgia;
+				font-style: italic;
+				font-size:18px;
 				margin-bottom:54px;
+				color: #606060;
 			}
 		}
 		form {
@@ -23,11 +28,12 @@
 				vertical-align:top;
 				height:57px;
 				font-size:14px;
-				border:1px solid #CCC;
+				font-style: italic;
+				border: 1px solid #CCC;
 				&.email {
 					width:475px;
 					border-right:none;
-					
+					padding-left:15px;
 				}
 				&.add {
 					width:97px;

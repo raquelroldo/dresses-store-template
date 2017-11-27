@@ -1,30 +1,35 @@
-.sign {
-  display: block;
-  margin: auto; }
-  .sign .wrapper {
-    text-align: center;
-    margin: 147px 0 135px 0; }
-    .sign .wrapper .h h2 {
-      text-transform: uppercase;
-      margin-bottom: 22px;
-      font-size: 29px; }
-    .sign .wrapper .h h3 {
-      font-size: 15px;
-      margin-bottom: 54px; }
-    .sign .wrapper form {
-      font-size: 0; }
-      .sign .wrapper form input {
-        display: inline-block;
-        vertical-align: top;
-        height: 57px;
-        font-size: 14px;
-        border: 1px solid #CCC; }
-        .sign .wrapper form input.email {
-          width: 475px;
-          border-right: none; }
-        .sign .wrapper form input.add {
-          width: 97px;
-          -webkit-appearance: none;
-          border-radius: 0;
-          background: #f68236;
-          color: #FFF; }
+.sign .wrapper {
+  width: 1180px;
+  text-align: center;
+  margin: 147px 0 135px 0; }
+  .sign .wrapper .h h2 {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #303030; }
+  .sign .wrapper .h h3 {
+    font-family: georgia;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 54px;
+    color: #606060; }
+  .sign .wrapper form {
+    font-size: 0; }
+    .sign .wrapper form input {
+      display: inline-block;
+      vertical-align: top;
+      height: 57px;
+      font-size: 14px;
+      font-style: italic;
+      border: 1px solid #CCC; }
+      .sign .wrapper form input.email {
+        width: 475px;
+        border-right: none;
+        padding-left: 15px; }
+      .sign .wrapper form input.add {
+        width: 97px;
+        -webkit-appearance: none;
+        border-radius: 0;
+        background: #f68236;
+        color: #FFF; }
