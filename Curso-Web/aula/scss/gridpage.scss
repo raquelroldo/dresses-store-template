@@ -3,17 +3,29 @@ section {
 	.wrapper {
 		width:1180px;
 		margin:0 auto;
-	}
-	ul {
-		margin-top:206px;
-		overflow: hidden;
+		h1 {
+			text-align:center;
+		}
+		a {
+			text-align:center;
+			color:#bfbfbf;
+		}
+		ul {
+		
+			li {
+				display: inline-block;
+				border:1px solid black;
+				width:206px;
+				height:256px;
+				margin: 206px 56px;
 
-		li {
-			display: inline-block;
-			border:1px solid black;
-			width:206px;
-			height:256px;
-			margin-right:110px;
+					&:first-child {
+					margin-left:0;
+				}
+				&:last-child {
+					margin-right:0;
+				}
+			}	
 		}
 	}
 }

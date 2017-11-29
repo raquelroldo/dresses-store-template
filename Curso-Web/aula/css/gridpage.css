@@ -3,12 +3,18 @@ section {
   section .wrapper {
     width: 1180px;
     margin: 0 auto; }
-  section ul {
-    margin-top: 206px;
-    overflow: hidden; }
-    section ul li {
+    section .wrapper h1 {
+      text-align: center; }
+    section .wrapper a {
+      text-align: center;
+      color: #bfbfbf; }
+    section .wrapper ul li {
       display: inline-block;
       border: 1px solid black;
       width: 206px;
       height: 256px;
-      margin-right: 110px; }
+      margin: 206px 56px; }
+      section .wrapper ul li:first-child {
+        margin-left: 0; }
+      section .wrapper ul li:last-child {
+        margin-right: 0; }
