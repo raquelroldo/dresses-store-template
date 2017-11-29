@@ -4,8 +4,9 @@
 @import 'intro.scss';
 @import 'sign.scss';
 @import 'footer.scss';
-
-
+@import 'slider.scss';
+@import 'gridpage.scss';
+@import 'menupage.scss';
 html {
 	background: #e5e5e5;
 	width: 1280px;
@@ -16,4 +17,5 @@ body {
 	background: #fff;
 	font-family: lato, sans-serif;
 	font-size:14px;
+	height:2356px;
 }

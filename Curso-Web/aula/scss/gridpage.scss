@@ -1,0 +1,19 @@
+section {
+	width: 100%;
+	.wrapper {
+		width:1180px;
+		margin:0 auto;
+	}
+	ul {
+		margin-top:206px;
+		overflow: hidden;
+
+		li {
+			display: inline-block;
+			border:1px solid black;
+			width:206px;
+			height:256px;
+			margin-right:110px;
+		}
+	}
+}

@@ -23,11 +23,17 @@ footer {
         text-decoration: none; }
     footer dl p {
       vertical-align: middle;
-      display: inline-block; }
+      display: inline-block;
+      border: 1px solid #606060;
+      box-sizing: border-box;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      padding: 9px 0;
+      font-size: 14px;
+      margin-right: 8px; }
       footer dl p a {
-        border: 1px solid #606060;
-        box-sizing: border-box;
-        color: #303030; }
+        color: #606060; }
     footer dl:fist-child {
       padding-left: 0; }
     footer dl:last-child {
