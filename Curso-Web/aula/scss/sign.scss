@@ -2,10 +2,10 @@
 	
 	.wrapper{
 		width: 1180px;
-		text-align: center;
+		
 		margin: 147px 0 135px 0;
 		.h {
-
+			text-align: center;
 			h2 {
 				text-transform: uppercase;
 				margin-bottom:22px;
@@ -22,7 +22,7 @@
 			}
 		}
 		form {
-			font-size:0;
+			
 			input {
 				display:inline-block;
 				vertical-align:top;

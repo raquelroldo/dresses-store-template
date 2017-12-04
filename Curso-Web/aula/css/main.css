@@ -197,25 +197,23 @@ section {
     font-size: 18px;
     margin-bottom: 54px;
     color: #606060; }
-  .sign .wrapper form {
-    font-size: 0; }
-    .sign .wrapper form input {
-      display: inline-block;
-      vertical-align: top;
-      height: 57px;
-      font-size: 14px;
-      font-style: italic;
-      border: 1px solid #CCC; }
-      .sign .wrapper form input.email {
-        width: 475px;
-        border-right: none;
-        padding-left: 15px; }
-      .sign .wrapper form input.add {
-        width: 97px;
-        -webkit-appearance: none;
-        border-radius: 0;
-        background: #f68236;
-        color: #FFF; }
+  .sign .wrapper form input {
+    display: inline-block;
+    vertical-align: top;
+    height: 57px;
+    font-size: 14px;
+    font-style: italic;
+    border: 1px solid #CCC; }
+    .sign .wrapper form input.email {
+      width: 475px;
+      border-right: none;
+      padding-left: 15px; }
+    .sign .wrapper form input.add {
+      width: 97px;
+      -webkit-appearance: none;
+      border-radius: 0;
+      background: #f68236;
+      color: #FFF; }
 
 footer {
   display: inline-block;
@@ -265,11 +263,9 @@ section {
   width: 100%; }
   section .wrapper {
     width: 1180px;
-    margin: 0 auto; }
-    section .wrapper h1 {
-      text-align: center; }
+    height: 503px;
+    text-align: center; }
     section .wrapper a {
-      text-align: center;
       color: #bfbfbf; }
     section .wrapper ul li {
       display: inline-block;
@@ -330,7 +326,6 @@ header {
 html {
   background: #e5e5e5;
   width: 1280px;
-  height: 2358px;
   margin: 60px 155px 60px 155px; }
 
 body {

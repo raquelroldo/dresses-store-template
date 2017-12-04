@@ -2,11 +2,9 @@ section {
   width: 100%; }
   section .wrapper {
     width: 1180px;
-    margin: 0 auto; }
-    section .wrapper h1 {
-      text-align: center; }
+    height: 503px;
+    text-align: center; }
     section .wrapper a {
-      text-align: center;
       color: #bfbfbf; }
     section .wrapper ul li {
       display: inline-block;

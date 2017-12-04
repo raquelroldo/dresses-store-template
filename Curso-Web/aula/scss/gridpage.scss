@@ -2,12 +2,12 @@ section {
 	width: 100%;
 	.wrapper {
 		width:1180px;
-		margin:0 auto;
+		text-align:center;
 		h1 {
-			text-align:center;
+			
 		}
 		a {
-			text-align:center;
+			
 			color:#bfbfbf;
 		}
 		ul {
@@ -19,7 +19,7 @@ section {
 				height:256px;
 				margin: 206px 56px;
 
-					&:first-child {
+				&:first-child {
 					margin-left:0;
 				}
 				&:last-child {
