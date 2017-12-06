@@ -1,1 +1,17 @@
-section{width:100%}section .wrapper{width:1180px;text-align:center}section .wrapper a{color:#bfbfbf}section .wrapper ul li{display:inline-block;border:1px solid black;width:206px;height:256px;margin:206px 56px}section .wrapper ul li:first-child{margin-left:0}section .wrapper ul li:last-child{margin-right:0}
+.grid {
+  width: 100%; }
+  .grid .wrapper {
+    width: 95%;
+    text-align: center; }
+    .grid .wrapper a {
+      color: #bfbfbf; }
+    .grid .wrapper ul li {
+      display: inline-block;
+      border: 1px solid black;
+      width: 206px;
+      height: 256px;
+      margin: 206px 56px; }
+      .grid .wrapper ul li:first-child {
+        margin-left: 0; }
+      .grid .wrapper ul li:last-child {
+        margin-right: 0; }

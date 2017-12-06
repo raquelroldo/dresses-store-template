@@ -9,12 +9,14 @@
 @import 'menupage.scss';
 html {
 	background: #e5e5e5;
-	width: 1280px;   
-	margin: 60px 155px 60px 155px; 
+	width: 100%;   
+	margin: auto;
 }
 body {
 	background: #fff;
 	font-family: lato, sans-serif;
 	font-size:14px;
-	height:2356px;
+	height:100%;
+	width:85%;
+	margin:62px auto;
 }

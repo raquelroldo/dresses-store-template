@@ -1,9 +1,8 @@
 .sign {
-	
+	margin: 147px 0 135px 0;
 	.wrapper{
-		width: 1180px;
-		
-		margin: 147px 0 135px 0;
+		width:95%;
+		margin: 0 auto;
 		.h {
 			text-align: center;
 			h2 {
@@ -22,10 +21,9 @@
 			}
 		}
 		form {
-			
+			text-align:center;
 			input {
 				display:inline-block;
-				vertical-align:top;
 				height:57px;
 				font-size:14px;
 				font-style: italic;

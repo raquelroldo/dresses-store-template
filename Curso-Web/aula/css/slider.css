@@ -1,1 +1,12 @@
-.slider{background:#303030}
+.slider {
+  margin-bottom: 48px;
+  width: 100%; }
+  .slider .wrapper {
+    width: 95%;
+    margin: 0 auto; }
+    .slider .wrapper ul {
+      width: 100%;
+      height: 119px;
+      background-color: #bbbbbb; }
+      .slider .wrapper ul li {
+        display: inline-block; }
