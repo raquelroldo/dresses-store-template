@@ -1,0 +1,16 @@
+.breadcrumbs {
+  text-transform: uppercase;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 30px; }
+  .breadcrumbs .wrapper {
+    width: 95%;
+    margin: 0 auto; }
+    .breadcrumbs .wrapper ul li {
+      display: inline-block;
+      padding: 0 13px; }
+      .breadcrumbs .wrapper ul li a {
+        text-decoration: none;
+        color: #606060; }
+      .breadcrumbs .wrapper ul li:first-child {
+        padding-left: 0; }
