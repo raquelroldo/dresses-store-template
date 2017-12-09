@@ -35,7 +35,7 @@ footer {
       margin-right: 8px; }
       footer dl p a {
         color: #606060; }
-    footer dl:fist-child {
+    footer dl:first-child {
       padding-left: 0; }
     footer dl:last-child {
       border: none; }

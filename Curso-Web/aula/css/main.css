@@ -258,7 +258,7 @@ footer {
       margin-right: 8px; }
       footer dl p a {
         color: #606060; }
-    footer dl:fist-child {
+    footer dl:first-child {
       padding-left: 0; }
     footer dl:last-child {
       border: none; }
@@ -276,35 +276,47 @@ footer {
       .slider .wrapper ul li {
         display: inline-block; }
 
-.grid {
+.gridpage {
   margin-top: 70px;
-  width: 100%; }
-  .grid .wrapper {
+  width: 100%;
+  text-align: center; }
+  .gridpage .wrapper {
     width: 95%;
-    margin: 0 auto;
-    text-align: center; }
-    .grid .wrapper h1 {
+    margin: 0 auto; }
+    .gridpage .wrapper h1 {
       text-transform: uppercase;
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 22px; }
-    .grid .wrapper a {
+    .gridpage .wrapper a {
       font-family: georgia;
       font-style: italic;
       color: #bfbfbf;
       font-size: 18px; }
-    .grid .wrapper .fa {
-      font-size: 10px; }
-    .grid .wrapper ul li {
-      margin: 63px 10px 33px 10px;
-      display: inline-block;
-      border: 1px solid black;
-      width: 206px;
-      height: 256px; }
-      .grid .wrapper ul li:first-child {
-        margin-left: 0; }
-      .grid .wrapper ul li:last-child {
-        margin-right: 0; }
+      .gridpage .wrapper a .fa {
+        font-size: 10px; }
+    .gridpage .wrapper .list {
+      width: 100%;
+      height: 463px; }
+      .gridpage .wrapper .list ul li {
+        margin: 63px 40px 33px 40px;
+        display: inline-block;
+        width: 206px;
+        height: 333px; }
+        .gridpage .wrapper .list ul li .li_container {
+          border: 1px solid #e5e5e5;
+          width: 206px;
+          height: 257px; }
+        .gridpage .wrapper .list ul li:first-child {
+          margin-left: 0; }
+        .gridpage .wrapper .list ul li:last-child {
+          margin-right: 0; }
+        .gridpage .wrapper .list ul li .details {
+          color: #303030;
+          margin-top: 33px; }
+          .gridpage .wrapper .list ul li .details h4 {
+            font-weight: bold;
+            line-height: 2; }
 
 header {
   width: 100%; }
