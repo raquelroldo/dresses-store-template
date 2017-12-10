@@ -26,19 +26,33 @@ header {
             margin-left: 0; }
       header .wrapper nav .personal {
         display: block;
-        float: right; }
-        header .wrapper nav .personal ul {
-          font-size: 0; }
-          header .wrapper nav .personal ul li {
-            display: inline-block;
-            font-size: 15px;
-            margin: 0 25px; }
-            header .wrapper nav .personal ul li a {
-              text-decoration: none;
-              color: #303030; }
-            header .wrapper nav .personal ul li:last-child {
-              width: 32px;
-              height: 32px;
-              border: 1px solid #606060;
-              box-sizing: border-box;
-              margin-right: 0; }
+        float: right;
+        /*ul{	
+					font-size:0;
+					li {
+						display: inline-block;
+						font-size: 15px;
+						margin:0 25px;
+						
+						a {
+							text-decoration:none;
+							color: #303030;	
+							span:hover {
+								color: orange;
+							}	
+						}
+						&:last-child {
+							width: 32px;
+							height: 32px;
+							border: 1px solid #606060;
+							box-sizing:border-box;
+							margin-right:0;
+						}	
+					}
+				}*/ }
+        header .wrapper nav .personal input {
+          display: inline-block;
+          height: 57px;
+          font-size: 14px;
+          font-style: italic;
+          border: 1px solid #CCC; }

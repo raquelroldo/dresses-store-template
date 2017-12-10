@@ -34,7 +34,14 @@ header {
 			.personal{
 				display: block;
 				float:right;
-				ul{	
+				input {
+					display:inline-block;
+					height:57px;
+					font-size:14px;
+					font-style: italic;
+					border: 1px solid #CCC;
+				}	
+				/*ul{	
 					font-size:0;
 					li {
 						display: inline-block;
@@ -43,7 +50,10 @@ header {
 						
 						a {
 							text-decoration:none;
-							color: #303030;		
+							color: #303030;	
+							span:hover {
+								color: orange;
+							}	
 						}
 						&:last-child {
 							width: 32px;
@@ -53,8 +63,8 @@ header {
 							margin-right:0;
 						}	
 					}
-				}
+				}*/
 			}	
 		}
 	}
-}
+}	
