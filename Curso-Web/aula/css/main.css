@@ -267,8 +267,27 @@ footer {
       width: 100%;
       height: 119px;
       background-color: #bbbbbb; }
+      .slider .wrapper ul .left {
+        display: inline-block;
+        height: inherit;
+        vertical-align: top;
+        width: 30px;
+        color: #ffffff;
+        font-size: 30px; }
       .slider .wrapper ul li {
-        display: inline-block; }
+        display: inline-block;
+        padding: 10px; }
+        .slider .wrapper ul li img {
+          display: inline-block;
+          vertical-align: middle; }
+      .slider .wrapper ul .right {
+        float: right;
+        display: inline-block;
+        height: inherit;
+        vertical-align: top;
+        width: 30px;
+        color: #ffffff;
+        font-size: 30px; }
 
 .gridpage {
   margin-top: 70px;
