@@ -32,7 +32,8 @@ header {
           header .wrapper nav .personal ul li {
             display: inline-block;
             font-size: 15px;
-            margin: 0 25px; }
+            margin: 0 25px;
+            line-height: 3; }
             header .wrapper nav .personal ul li a {
               text-decoration: none;
               color: #303030; }

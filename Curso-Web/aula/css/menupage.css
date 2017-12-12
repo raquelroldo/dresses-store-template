@@ -6,27 +6,28 @@ header {
     header .wrapper nav {
       height: 116px;
       width: 100%;
-      border-bottom: 1px solid #e5e5e5;
-      padding: 54px 0 54px 0; }
+      border-bottom: 1px solid #e5e5e5; }
       header .wrapper nav .basic {
         float: left;
         display: block; }
         header .wrapper nav .basic ul li {
           font-size: 15px;
           display: inline-block;
-          margin: 0 21px; }
+          margin: 0 15px; }
           header .wrapper nav .basic ul li a {
             text-decoration: none;
             color: #303030;
-            padding: 14px; }
+            padding: 13px; }
             header .wrapper nav .basic ul li a:hover {
               color: #fff;
               background: #222; }
           header .wrapper nav .basic ul li:first-child {
             margin-left: 0; }
+          header .wrapper nav .basic ul li:last-child {
+            margin-right: 0; }
       header .wrapper nav .personal {
         display: block;
-        float: right;
+        margin-top: -19px;
         /*ul{	
 					font-size:0;
 					li {
@@ -50,9 +51,33 @@ header {
 						}	
 					}
 				}*/ }
-        header .wrapper nav .personal input {
-          display: inline-block;
-          height: 57px;
-          font-size: 14px;
-          font-style: italic;
-          border: 1px solid #CCC; }
+        header .wrapper nav .personal form {
+          font-size: 0; }
+          header .wrapper nav .personal form a {
+            margin: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #303030;
+            /*span:hover {
+							color: #f68236;
+						}*/ }
+            header .wrapper nav .personal form a span {
+              color: #f68236; }
+          header .wrapper nav .personal form input {
+            display: inline-block;
+            padding: 19px 5px 10px 10px;
+            font-size: 12px;
+            font-style: italic;
+            border: 1px solid #959595; }
+          header .wrapper nav .personal form button {
+            border: 1px solid #959595;
+            border-left: none;
+            color: #606060;
+            -webkit-appearance: none;
+            border-radius: 0;
+            text-decoration: none;
+            color: #fff; }
+            header .wrapper nav .personal form button .fa {
+              display: inline-block;
+              padding: 14px 7px 9px 7px;
+              font-size: 18px; }
