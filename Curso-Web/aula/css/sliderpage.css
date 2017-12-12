@@ -1,0 +1,41 @@
+.slider {
+  margin-bottom: 48px;
+  width: 100%; }
+  .slider .wrapper {
+    width: 95%;
+    margin: 0 auto; }
+    .slider .wrapper .lookbook {
+      border-top: 1px solid #e5e5e5;
+      margin-top: 70px; }
+      .slider .wrapper .lookbook h3 {
+        margin: 49px 0 60px 0;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Georgia';
+        font-style: italic;
+        color: #606060; }
+    .slider .wrapper ul {
+      width: 100%;
+      height: 119px;
+      background-color: #bbbbbb; }
+      .slider .wrapper ul .left {
+        display: inline-block;
+        height: inherit;
+        vertical-align: top;
+        width: 30px;
+        color: #ffffff;
+        font-size: 30px; }
+      .slider .wrapper ul li {
+        display: inline-block;
+        padding: 10px; }
+        .slider .wrapper ul li img {
+          display: inline-block;
+          vertical-align: middle; }
+      .slider .wrapper ul .right {
+        float: right;
+        display: inline-block;
+        height: inherit;
+        vertical-align: top;
+        width: 30px;
+        color: #ffffff;
+        font-size: 30px; }
