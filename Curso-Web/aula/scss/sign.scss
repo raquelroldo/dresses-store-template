@@ -22,6 +22,7 @@
 		}
 		form {
 			text-align:center;
+			font-size:0;
 			input {
 				display:inline-block;
 				height:57px;
@@ -34,6 +35,7 @@
 					padding-left:15px;
 				}
 				&.add {
+					vertical-align:top;
 					width:97px;
 					-webkit-appearance: none;
 					border-radius:0;

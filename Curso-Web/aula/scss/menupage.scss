@@ -35,10 +35,10 @@ header {
 			}
 			.personal{
 				display: block;
-				margin-top: -18px;
+				
 				form {
 					font-size: 0;
-
+					margin-top: -18px;
 					a {
 						margin: 25px;
 						font-size: 14px;
@@ -53,25 +53,37 @@ header {
 					}						
 				
 					input {
-						margin-left:15px;
-						display:inline-block;
-						padding: 17px 23px 9px 10px;
-						font-size:12px;
+						width:0;
 						font-style: italic;
-						border: 1px solid #959595;	
+						transition: all 0.5s ease-in-out;
 					}
 					button {
 						border: 1px solid #959595;
-						border-left: none;
-						background: #606060;
+						background: #fff;
 						-webkit-appearance: none;
 	   					border-radius: 0;
 						text-decoration:none;
-						color: #fff;
+						color: #606060;
 						.fa {
 							display: inline-block;
 							padding: 13px 7px 7px 7px;
 							font-size: 18px;
+						}
+					}
+					&:hover {
+						input {
+							width:150px;
+							margin-left:15px;
+							display:inline-block;
+							padding: 17px 15px 9px 10px;
+							font-size:12px;
+							border: 1px solid #959595;	
+							border-right: none;
+						}
+						button {
+							background: #606060;
+							color: #fff;
+
 						}
 					}
 				}
@@ -102,5 +114,42 @@ header {
 		}
 	}
 }	
+/*<div class=search>
+<input type=text>
+<span> > <span>
 
+
+
+
+.search {
+	border:
+	width:40px;
+	height:40px;
+	line-height:40px;
+	position:relative;
+	overflow:hidden;
+	
+	input {
+		position:absolute;
+		left:0;
+		top:0;
+		height:40px;
+		border:none;
+		width:0;
+		transition:all 1s ease-in-out;
+	}
+	span {
+	position:absolute;
+	right:15px;
+	top:0;
+	}
+	&:hover {
+		width:200px;
+		span {
+			width:150px;
+			padding:0 10px;
+		}
+	}
+}
+*/
 
