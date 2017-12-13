@@ -23,6 +23,9 @@
 			background-color:#bbbbbb;
 
 			.left {
+				background:#e4e4e4;
+				-webkit-appearance: none;
+				border-radius:0;
 				display: inline-block;	
 				height: inherit;
 			    vertical-align: top;
@@ -39,12 +42,15 @@
 				}
 			}
 			.right {
+				background:#e4e4e4;
+				-webkit-appearance: none;
+				border-radius:0;
 				float: right;
 				display: inline-block;
 				height: inherit;
 			    vertical-align: top;
 			    width: 30px;
-			    color: #ffffff;
+			    color: #fff;
 			    font-size: 30px;
 			}
 		}
