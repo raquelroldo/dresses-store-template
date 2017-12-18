@@ -1,1 +1,118 @@
-header{width:100%}header .wrapper{width:95%;margin:0 auto}header .wrapper nav{height:116px;width:100%;border-bottom:1px solid #e5e5e5}header .wrapper nav .basic{float:left;display:block}header .wrapper nav .basic ul li{font-size:15px;display:inline-block;margin:0 15px}header .wrapper nav .basic ul li a{text-decoration:none;color:#303030;padding:13px}header .wrapper nav .basic ul li a:hover{color:#fff;background:#222}header .wrapper nav .basic ul li:first-child{margin-left:0}header .wrapper nav .basic ul li:last-child{margin-right:0}header .wrapper nav .personal{display:block}header .wrapper nav .personal form{font-size:0;margin-top:-18px}header .wrapper nav .personal form a{margin:25px;font-size:14px;text-decoration:none;color:#303030}header .wrapper nav .personal form a span{color:#f68236}header .wrapper nav .personal form input{width:0;font-style:italic;transition:all 0.5s ease-in-out}header .wrapper nav .personal form button{border:1px solid #959595;background:#fff;-webkit-appearance:none;border-radius:0;text-decoration:none;color:#606060}header .wrapper nav .personal form button .fa{display:inline-block;padding:13px 7px 7px 7px;font-size:18px}header .wrapper nav .personal form:hover input{width:150px;margin-left:15px;display:inline-block;padding:17px 15px 9px 10px;font-size:12px;border:1px solid #959595;border-right:none}header .wrapper nav .personal form:hover button{background:#606060;color:#fff}
+/*@mixin responsive($smallerValue,$biggerValue) {
+  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
+    @content;
+  }
+}
+
+
+header {
+	width: 100%;
+	.wrapper {
+		width:95%;
+		margin:0 auto;
+		input[id="bt_menu"] + label {
+				background:#ccc;
+				color: fff;
+				padding: 5px;
+				cursor: pointer;
+				text-align: center;
+				font-size: 30px;
+				width: 50px;
+				height: 50px;
+			}	
+		nav {
+			height:116px;
+			width: 100%;
+			border-bottom:1px solid #e5e5e5;
+
+			.basic{
+				float: left;
+				display: block;
+				ul {
+					li {
+						font-size: 15px;
+						display: inline-block;
+						margin:0 15px;
+						a{
+							text-decoration: none;
+							color: #303030;
+							padding:13px;							
+							&:hover {
+								color:#fff;
+								background:#222;
+							}	
+						}
+						&:first-child {
+							margin-left:0;
+						}	
+						&:last-child {
+							margin-right: 0;
+						}
+						@include responsive(0,800px) {
+							text-align: center;
+							float: none;
+							width: 100%;
+							background:#cecece;
+							line-height: 3;
+							&:first-child {
+							margin-left:15px;
+							}
+						}
+					}
+				}
+			}
+			.personal{
+				display: block;
+				a {
+					margin: 25px;
+					font-size: 14px;
+					text-decoration:none;
+					color: #303030;
+					span {
+						color: #f68236;
+					}
+				}						
+				form {
+					font-size: 0;
+					margin-top: -18px;
+					
+				
+					input {
+						width:0;
+						font-style: italic;
+						transition: all 0.5s ease-in-out;
+					}
+					button {
+						border: 1px solid #959595;
+						background: #fff;
+						-webkit-appearance: none;
+	   					border-radius: 0;
+						text-decoration:none;
+						color: #606060;
+						.fa {
+							display: inline-block;
+							padding: 13px 7px 7px 7px;
+							font-size: 18px;
+						}
+					}
+					&:hover {
+						input {
+							width:150px;
+							margin-left:15px;
+							display:inline-block;
+							padding: 18px 15px 8px 10px;
+							font-size:12px;
+							border: 1px solid #959595;	
+							border-right: none;
+						}
+						button {
+							background: #606060;
+							color: #fff;
+
+						}
+					}
+				}
+			}	
+		}
+	}
+}*/

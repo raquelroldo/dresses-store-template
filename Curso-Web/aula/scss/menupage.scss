@@ -1,12 +1,30 @@
+/*@mixin responsive($smallerValue,$biggerValue) {
+  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
+    @content;
+  }
+}
+
+
 header {
 	width: 100%;
 	.wrapper {
 		width:95%;
 		margin:0 auto;
+		input[id="bt_menu"] + label {
+				background:#ccc;
+				color: fff;
+				padding: 5px;
+				cursor: pointer;
+				text-align: center;
+				font-size: 30px;
+				width: 50px;
+				height: 50px;
+			}	
 		nav {
 			height:116px;
 			width: 100%;
 			border-bottom:1px solid #e5e5e5;
+
 			.basic{
 				float: left;
 				display: block;
@@ -30,27 +48,34 @@ header {
 						&:last-child {
 							margin-right: 0;
 						}
+						@include responsive(0,800px) {
+							text-align: center;
+							float: none;
+							width: 100%;
+							background:#cecece;
+							line-height: 3;
+							&:first-child {
+							margin-left:15px;
+							}
+						}
 					}
 				}
 			}
 			.personal{
 				display: block;
-				
+				a {
+					margin: 25px;
+					font-size: 14px;
+					text-decoration:none;
+					color: #303030;
+					span {
+						color: #f68236;
+					}
+				}						
 				form {
 					font-size: 0;
 					margin-top: -18px;
-					a {
-						margin: 25px;
-						font-size: 14px;
-						text-decoration:none;
-						color: #303030;
-						span {
-							color: #f68236;
-						}
-						/*span:hover {
-							color: #f68236;
-						}*/	
-					}						
+					
 				
 					input {
 						width:0;
@@ -75,7 +100,7 @@ header {
 							width:150px;
 							margin-left:15px;
 							display:inline-block;
-							padding: 17px 15px 9px 10px;
+							padding: 18px 15px 8px 10px;
 							font-size:12px;
 							border: 1px solid #959595;	
 							border-right: none;
@@ -87,69 +112,7 @@ header {
 						}
 					}
 				}
-				/*ul{	
-					font-size:0;
-					li {
-						display: inline-block;
-						font-size: 15px;
-						margin:0 25px;
-						
-						a {
-							text-decoration:none;
-							color: #303030;	
-							span:hover {
-								color: orange;
-							}	
-						}
-						&:last-child {
-							width: 32px;
-							height: 32px;
-							border: 1px solid #606060;
-							box-sizing:border-box;
-							margin-right:0;
-						}	
-					}
-				}*/
 			}	
 		}
 	}
-}	
-/*<div class=search>
-<input type=text>
-<span> > <span>
-
-
-
-
-.search {
-	border:
-	width:40px;
-	height:40px;
-	line-height:40px;
-	position:relative;
-	overflow:hidden;
-	
-	input {
-		position:absolute;
-		left:0;
-		top:0;
-		height:40px;
-		border:none;
-		width:0;
-		transition:all 1s ease-in-out;
-	}
-	span {
-	position:absolute;
-	right:15px;
-	top:0;
-	}
-	&:hover {
-		width:200px;
-		span {
-			width:150px;
-			padding:0 10px;
-		}
-	}
-}
-*/
-
+}*/
