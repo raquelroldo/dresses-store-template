@@ -1,0 +1,18 @@
+@mixin responsive($smallerValue,$biggerValue) {
+  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
+    @content;
+  }
+}
+
+/*body {
+	font-size: 0;
+}
+header {
+	.wrapper {
+
+	}
+		&:nth-child() {
+			@include responsive(0,400px);
+			display: none;
+		}
+}*/
