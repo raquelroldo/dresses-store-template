@@ -1,3 +1,10 @@
+@mixin responsive($smallerValue,$biggerValue) {
+  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
+    @content;
+  }
+}
+
+
 .grid {
 	max-width:1280px;
 	.wrapper {
@@ -9,6 +16,14 @@
 			vertical-align:top;
 			font-size:20px;
 			width: 25%;
+			@include responsive(0,900px) {
+				width: 50%;
+				margin: 0;
+			}
+			@include responsive(0,600px) {
+				width: 100%;
+				height: 300px;
+			}
 			article {
 				height:293px;
 				display:block;

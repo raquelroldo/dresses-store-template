@@ -10,39 +10,43 @@ header {
 	.wrapper {
 		width:95%;
 		margin:0 auto;
-		input[id="bt_menu"] {
-			display: none;
-		}
-		label {
-			background:#ccc;
-			color: fff;
-			padding: 5px;
-			cursor: pointer;
-			text-align: center;
-			font-size: 30px;
-			width: 50px;
-			height: 50px;
-			display: none;	
-			@include responsive(0,800px) {
-				display:block;
-			}		
-		}				
 		nav {
 			height:116px;
 			width: 100%;
 			border-bottom:1px solid #e5e5e5;
 			padding: 54px 0 54px 0;
-			
+			input[id="bt_menu"] {
+				display: none;
+			}
+			label {
+				background:#ccc;
+				color: fff;
+				padding: 5px;
+				cursor: pointer;
+				text-align: center;
+				font-size: 30px;
+				width: 50px;
+				height: 50px;
+				display: none;
+				margin-left: -100%;	
+				@include responsive(801px,1080px) {
+					display:none;
+				}
+				@include responsive(0,800px) {
+					display:block;
+					input:checked .basic {
+						margin-left: 100%;
+					}
+				}
+			}				
 			.basic{
 				float: left;
-				display: block;
+				display: block;				
 				ul {
-					
 					li {
 						font-size: 15px;
 						display: inline-block;
 						margin:0 21px;
-
 						a{
 							text-decoration: none;
 							color: #303030;
@@ -52,7 +56,7 @@ header {
 								background:#222;
 							}
 							&:first-child {
-							margin-left:0;
+								margin-left:0;
 							}
 						}	
 						@include responsive(0,800px) {
@@ -61,13 +65,7 @@ header {
 							width: 100%;
 							background:#cecece;
 							line-height: 3;
-							margin-left: -100%;
-							input:checked {
-								margin-left: 0;
-							}
-							&:first-child {
-								margin-left:-100%;
-							}
+							
 						}	
 					}
 				}

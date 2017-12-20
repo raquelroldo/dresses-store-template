@@ -4,6 +4,11 @@
   .intro .wrapper .h {
     text-align: center;
     margin: 150px 0; }
+    @media (min-width: 0) and (max-width: 800px) {
+      .intro .wrapper .h {
+        max-width: 500px;
+        text-align: center;
+        font-size: 20px; } }
     .intro .wrapper .h h1 {
       color: #303030;
       text-transform: uppercase;

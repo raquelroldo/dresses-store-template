@@ -3,26 +3,32 @@ header {
   header .wrapper {
     width: 95%;
     margin: 0 auto; }
-    header .wrapper input[id="bt_menu"] {
-      display: none; }
-    header .wrapper label {
-      background: #ccc;
-      color: fff;
-      padding: 5px;
-      cursor: pointer;
-      text-align: center;
-      font-size: 30px;
-      width: 50px;
-      height: 50px;
-      display: none; }
-      @media (min-width: 0) and (max-width: 800px) {
-        header .wrapper label {
-          display: block; } }
     header .wrapper nav {
       height: 116px;
       width: 100%;
       border-bottom: 1px solid #e5e5e5;
       padding: 54px 0 54px 0; }
+      header .wrapper nav input[id="bt_menu"] {
+        display: none; }
+      header .wrapper nav label {
+        background: #ccc;
+        color: fff;
+        padding: 5px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        display: none;
+        margin-left: -100%; }
+        @media (min-width: 801px) and (max-width: 1080px) {
+          header .wrapper nav label {
+            display: none; } }
+        @media (min-width: 0) and (max-width: 800px) {
+          header .wrapper nav label {
+            display: block; }
+            header .wrapper nav label input:checked .basic {
+              margin-left: 100%; } }
       header .wrapper nav .basic {
         float: left;
         display: block; }
@@ -45,12 +51,7 @@ header {
               float: none;
               width: 100%;
               background: #cecece;
-              line-height: 3;
-              margin-left: -100%; }
-              header .wrapper nav .basic ul li input:checked {
-                margin-left: 0; }
-              header .wrapper nav .basic ul li:first-child {
-                margin-left: -100%; } }
+              line-height: 3; } }
       header .wrapper nav .personal {
         display: block;
         float: right; }
