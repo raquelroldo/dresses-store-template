@@ -6,7 +6,6 @@
 
 
 .grid {
-	max-width:1280px;
 	.wrapper {
 		width:95%;
 		margin:0 auto;
@@ -70,6 +69,9 @@
 	              background:#d0d0d0;
 	              height:293px;
 	            }
+	            @include responsive(0,900px) {
+				display:none;
+			}
 	          }
 	        }	
 	        &:nth-child(4){
@@ -82,6 +84,9 @@
 		              background:#d7d7d7;
 		              height:586px;
 		            }
+		            @include responsive(0,900px) {
+				display:none;
+			}
 	            }  
 	        }	
 		}

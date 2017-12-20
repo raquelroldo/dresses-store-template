@@ -4,41 +4,17 @@
   }
 }
 
-
 header {
 	width: 100%;
 	.wrapper {
 		width:95%;
 		margin:0 auto;
 		nav {
-			height:116px;
+			height:100%;
 			width: 100%;
 			border-bottom:1px solid #e5e5e5;
 			padding: 54px 0 54px 0;
-			input[id="bt_menu"] {
-				display: none;
-			}
-			label {
-				background:#ccc;
-				color: fff;
-				padding: 5px;
-				cursor: pointer;
-				text-align: center;
-				font-size: 30px;
-				width: 50px;
-				height: 50px;
-				display: none;
-				margin-left: -100%;	
-				@include responsive(801px,1080px) {
-					display:none;
-				}
-				@include responsive(0,800px) {
-					display:block;
-					input:checked .basic {
-						margin-left: 100%;
-					}
-				}
-			}				
+			
 			.basic{
 				float: left;
 				display: block;				
@@ -46,7 +22,15 @@ header {
 					li {
 						font-size: 15px;
 						display: inline-block;
-						margin:0 21px;
+						margin-right:40px;
+						.burger {
+							background:#cecece;
+							width:20px;
+							height:20px;
+							span {
+								color: #ccc;
+							}
+						}
 						a{
 							text-decoration: none;
 							color: #303030;
@@ -54,19 +38,15 @@ header {
 							&:hover {
 								color:#fff;
 								background:#222;
-							}
-							&:first-child {
-								margin-left:0;
-							}
-						}	
-						@include responsive(0,800px) {
-							text-align: center;
-							float: none;
-							width: 100%;
-							background:#cecece;
-							line-height: 3;
-							
-						}	
+							}	
+						}
+						&:last-child {
+							margin-right:0;
+						}
+						@include responsive(0,600px) {
+						width: 100%;
+						background:#cecece;
+					}
 					}
 				}
 			}
@@ -85,6 +65,7 @@ header {
 				form {
 					font-size: 0;
 					float: right;
+					margin-top:-16px;
 					input {
 						width:0;
 						font-style: italic;
@@ -99,7 +80,7 @@ header {
 						color: #606060;
 						.fa {
 							display: inline-block;
-							padding: 13px 7px 7px 7px;
+							padding: 14px 7px 6px 7px;
 							font-size: 18px;
 						}
 					}
@@ -116,11 +97,10 @@ header {
 						button {
 							background: #606060;
 							color: #fff;
-
 						}
 					}
 				}
-			}	
+			}
 		}
 	}
 }
