@@ -17,12 +17,26 @@
         height: 300px; } }
     .grid .wrapper .coll article {
       height: 293px;
-      display: block; }
+      display: block;
+      display: block;
+      color: #fff;
+      line-height: 1.5;
+      text-align: center; }
       .grid .wrapper .coll article h1 {
         text-transform: uppercase;
-        display: block;
-        padding-top: 50%;
-        color: #fff; }
+        padding: 80% 25% 0 25%; }
+        @media (min-width: 0) and (max-width: 600px) {
+          .grid .wrapper .coll article h1 {
+            width: 100%;
+            padding-top: 25%; } }
+      .grid .wrapper .coll article h2 {
+        text-transform: uppercase;
+        padding-top: 10%;
+        padding: 20% 25% 0 25%; }
+      .grid .wrapper .coll article h4 {
+        padding-top: 10%; }
+      .grid .wrapper .coll article p {
+        padding: 15% 15%; }
     .grid .wrapper .coll:nth-child(1) article:nth-child(1) {
       background: #d2d2d2;
       height: 586px; }

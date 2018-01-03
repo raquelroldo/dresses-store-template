@@ -32,6 +32,8 @@
     text-align: center;
     margin: 70px 20px; }
     .intro .wrapper .h h1 {
-      font-size: 40px; }
+      font-size: 40px;
+      line-height: 1.5; }
     .intro .wrapper .h h3 {
-      font-size: 18px; } }
+      font-size: 18px;
+      line-height: 1.5; } }

@@ -67,7 +67,15 @@
 				</div>
 				<div class="personal">
 					<a href="#"><i class="fa fa-user" aria-hidden="true"></i> Hi, Michal (<span>logout</span>)</a>
-					<a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Basket (4)</a>
+					<div class="basket">
+						<a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Basket (4)</a>
+						<div class="basket-items">
+							<ul>
+								<li>Shop Item</li>
+								<li>Shop Item</li>
+							</ul>
+						</div>
+					</div>	
 					<form>
 						<input type="text" name="Search" placeholder="Search somenting...">
 						<button><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -86,9 +94,41 @@
 	</section>
 	<section class="gridpage">
 		<div class="wrapper">
-			<h1>Coats</h1>
-			<a href="#">show more <i class="fa fa-play" aria-hidden="true"></i></a>
-			<div class="list">
+			<h1>Men</h1>
+			<h3>All products</h3>
+			<div class="filter">
+				<span>Price</span>
+				<div class="filter-options">
+					<ul>
+						<li>€20-30</li>
+						<li>€30-50</li>
+						<li>€50-100</li>
+						<li>€100 and more</li>
+					</ul>
+				</div>
+			</div>
+			<div class="filter">
+				<span>Size</span>
+				<div class="filter-options">
+					<ul>
+						<li>Small</li>
+						<li>Medium</li>
+						<li>Large and more</li>
+					</ul>
+				</div>
+			</div>
+			<div class="filter">
+				<span>Colour</span>
+				<div class="filter-options">
+					<ul>
+						<li>Neutrals</li>
+						<li>Darks</li>
+						<li>Lights</li>
+						<li>Colorful</li>
+					</ul>
+				</div>
+			</div>
+			<div id="grid-1" class="list">
 				<ul>
 					<li>
 						<div class="li_container"></div>
@@ -108,9 +148,7 @@
 					</li>	
 				</ul>
 			</div>
-			<h1>Outerwear</h1>
-			<a href="#">show more <i class="fa fa-play" aria-hidden="true"></i></a>
-			<div class="list">
+			<div id="grid-2" class="list">
 				<ul>
 					<li>
 						<div class="li_container"></div>
@@ -130,9 +168,7 @@
 					</li>
 				</ul>
 			</div>
-			<h1>T-Shirts</h1>
-			<a href="#">show more <i class="fa fa-play" aria-hidden="true"></i></a>
-			<div class="list">
+			<div id="grid-3" class="list">
 				<ul>
 					<li>
 						<div class="li_container"></div>
@@ -151,7 +187,18 @@
 						<div class="details"><h4>Double-Layered Top</h4><p>€ 89,95</p></div>
 					</li>
 				</ul>
+			<div>
+			<div>
+				<span id="grid-1">1</span>
 			</div>
+			<div>
+				<span id="grid-2">2</span>
+			</div>
+			<div>
+				<span id="grid-3">3</span>
+			</div>
+			</div>
+		</div>
 	</section>
 	<section class="slider">
 		<div class="wrapper">
