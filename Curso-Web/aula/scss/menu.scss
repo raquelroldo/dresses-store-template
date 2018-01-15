@@ -3,18 +3,17 @@
     @content;
   }
 }
-
 header {
 	width: 100%;
 	.wrapper {
 		width:95%;
 		margin:0 auto;
 		nav {
+			position:relative;
 			height:100%;
 			width: 100%;
 			border-bottom:1px solid #e5e5e5;
-			padding: 54px 0 54px 0;
-									
+			padding: 54px 0 54px 0;				
 			.basic{
 				float: left;
 				display: block;
@@ -23,7 +22,7 @@ header {
 					li {
 						font-size: 15px;
 						display: inline-block;
-						margin-right:30px;
+						margin-right:20px;
 						
 						a{
 							text-decoration: none;
@@ -55,94 +54,18 @@ header {
 				}
 				@include responsive(0,700px) {
 					width:100%;
-				}	
-			}
-			.personal{
-				display: block;
-				float:right;
-				a {
-					margin: 25px;
-					font-size: 14px;
-					text-decoration:none;
-					color: #303030;
-					span {
-						color: #f68236;
-					}
-					@include responsive(0,700px) {
-						font-size:20px;
-						display:block;
-						text-align:left;
-						padding:16px 13px;
-						margin:0;
-						margin-bottom: 25px;
-						text-align: center;
-					}
-				}						
-				form {
-					font-size: 0;
-					float: right;
-					margin-top:-16px;
-					input {
-						width:0;
-						font-style: italic;
-						transition: all 0.5s ease-in-out;
-					}
-					button {
-						border: 1px solid #959595;
-						background: #fff;
-						-webkit-appearance: none;
-	   					border-radius: 0;
-						text-decoration:none;
-						color: #606060;
-						.fa {
-							display: inline-block;
-							padding: 14px 7px 6px 7px;
-							font-size: 18px;
-						}
-					}
-					&:hover {
-						input {
-							width:150px;
-							margin-left:15px;
-							display:inline-block;
-							padding: 19px 15px 7px 10px;
-							font-size:12px;
-							border: 1px solid #959595;	
-							border-right: none;
-						}
-						button {
-							background: #606060;
-							color: #fff;
-						}
-					}
-					@include responsive(0,700px) {
-						width:100%;
-						text-align:center;
-						display:block;
-						margin: 10px;
-					}
-				}
-				@include responsive(0,900px) {
 					display:none;
-					}
-				@include responsive(0,700px) {
-					display:block;
-					width: 100%;
-					background:#cecece;
-					font-size:30px;
-					margin-bottom: 40px;
 				}	
 			}
 			.burger {
 				display:block;
-				position:relative;
-				background:none;
-				left:0; 
+				position:absolute;
+				right:40px; 
 				cursor: pointer;
 				a {
 					position:absolute;
 					left:0px;
-					top:10px;
+					top:-10px;
 					&:before {
 						content:'';
 						left:0;
@@ -175,10 +98,86 @@ header {
 						height:5px;
 						border-radius:2px;
 					}
+			}	}
+			.personal{
+				display: block;
+				float:right;
+				a {
+					margin-right: 65px;
+					font-size: 14px;
+					text-decoration:none;
+					color: #303030;
+					@include responsive(0,700px) {
+						font-size:20px;
+						display:block;
+						text-align:left;
+						padding:16px 13px;
+						margin:0;
+						margin-bottom: 25px;
+						text-align: center;
+					}
+				}				
+				form {
+					font-size: 0;
+					float: right;
+					margin-top:-27px;
+					position:absolute;
+					right:0;
+					input {
+						width:0;			    
+						border: 1px solid #959595;	
+						border-right:none;
+						font-style: italic;
+						transition: all 0.5s ease-in-out;
+					}
+					button {
+						border: 1px solid #959595;
+						background: #fff;
+						-webkit-appearance: none;
+	   					border-radius: 0;
+						text-decoration:none;
+						color: #606060;
+						margin:0 -3px;
+						i {
+							display: inline-block;
+							font-size: 18px;
+							padding: 9px 5px 0px 5px;
+						    height: 37px;
+						    width: 30px;
+						}
+					}
+					&:hover {
+						input {
+							height: 40px;
+							padding: 20px 1px 16px 5px;	
+							width:160px;
+							display:inline-block;
+							font-size:12px;
+							border: 1px solid #959595;	
+							border-right: none;
+						}
+						button {
+							background: #606060;
+							color: #fff;
+						}
+					}
+					@include responsive(0,700px) {
+						width:100%;
+						text-align:center;
+						margin: 10px;
+					}
 				}
+				@include responsive(0,900px) {
+					display:none;
+				}
+				
 				@include responsive(0,700px) {
-					width: 0;
-					top:-50px;
+					left:90%;
+					height:auto;
+					width: 100%;
+					top:-20px;
+					font-size:30px;
+					margin-bottom: 40px;
 					background:#cecece;
 					padding:0 14px;
 					text-align:center;

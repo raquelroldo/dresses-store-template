@@ -1,14 +1,21 @@
+@mixin responsive($smallerValue,$biggerValue) {
+  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
+    @content;
+  }
+}
+
 footer {
-	width:100%;
+	width:calc(100% - 64px);
 	display:inline-block;
 	text-align:left;
 	margin: 0 32px 55px 32px;
+	position:relative;
 	dl {
 		padding-left: 20px;
 		display:inline-block;
 		text-align:left;
-		height:162px;
-		width:288px;
+		width:22%;
+		height:165px;
 		vertical-align: top;
 		color: #303030;
 		border-right: 1px solid #eaeaea;
@@ -17,6 +24,9 @@ footer {
 			font-weight: bold;
 			line-height: 30px;
 			font-size:14px;	
+			@include responsive(0,750px) {
+				font-size:18px;
+			}
 		}
 		dd {
 			line-height: 25px;
@@ -24,7 +34,9 @@ footer {
 			a {
 				text-decoration: none;	
 			}
-
+			@include responsive(0,750px) {
+				display:none;	
+			}
 		}
 		p {
 			vertical-align: middle;
@@ -36,16 +48,40 @@ footer {
 			text-align: center;
 			padding: 9px 0;
 			font-size: 14px;
-			margin-right: 8px;
+			margin-right: 2px;
 			a {
 				color: #606060;
+			}
+			@include responsive(0,750px) {
+				display:none;
+				padding:5px;
 			}	
 		}
 		&:first-child {
 			padding-left: 0;
+			@include responsive(0,750px) {
+				margin-right:10px;
+			}
 		}
 		&:last-child {
-			border: none;
+			border: none;	
+		}
+		@include responsive(0,750px) {
+			border:none;
+			margin:0;	
+			padding:0;
+			width:60%;
+			height:auto;
+
+			&:hover {
+				dd {
+					display:block;
+					font-size:16px;
+				}
+				p {
+					display:inline-block;
+				}
+			}
 		}
 	}
 }

@@ -33,26 +33,41 @@
 				h1 {
 					text-transform: uppercase;
 					padding: 80% 25% 0 25%;
+					font-size:24px;
+					font-weight:bold;
 					@include responsive(0,600px) {
 						width: 100%;
 						padding-top: 25%;
 					}
 				}
 				h2 {
+					font-size:24px;
+					font-weight:bold;
 					text-transform: uppercase;
 					padding-top: 10%;	
 					padding: 20% 25% 0 25%;
 				}
 				h3 {
-					
+					font-size:18px;
+					font-family: georgia;
+					font-style: italic;
 				}
 				h4 {
+					text-transform: uppercase;
+					font-size:18px;
+					font-family: georgia;
+					font-style: italic;
 					padding-top: 10%;
 				}
 				p {
+					font-size:14px;
+					font-family: georgia;
+					font-style: italic;
 					padding:15% 15%;
 					span {
-
+						font-size:14px;
+						font-weight:bold;
+						font-style: italic;
 					}
 				}
 				

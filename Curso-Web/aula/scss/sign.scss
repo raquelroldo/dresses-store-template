@@ -1,3 +1,9 @@
+@mixin responsive($smallerValue,$biggerValue) {
+  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
+    @content;
+  }
+}
+
 .sign {
 	margin: 147px 0 135px 0;
 	.wrapper{
@@ -20,7 +26,21 @@
 				margin-bottom:54px;
 				color: #606060;
 			}
-		}
+			@include responsive(0,750px) {
+				text-align: center;
+				margin:70px 20px;
+				h2 {
+					font-size:30px;
+					line-height: 1.5;
+				}
+				h3 {
+					font-size:18px;
+					line-height: 1.5;
+				}
+			}
+		}	
+	
+
 		form {
 			text-align:center;
 			font-size:0;
@@ -34,6 +54,10 @@
 					width:475px;
 					border-right:none;
 					padding-left:15px;
+					@include responsive(0,750px) {
+						width:70%;
+						font-size:18px;
+					}		
 				}
 				&.add {
 					vertical-align:top;
@@ -42,8 +66,16 @@
 					border-radius:0;
 					background:#f68236;
 					color:#FFF;
-				}	
+					@include responsive(0,750px) {
+						width:20%;
+						font-size:18px;
+					}	
+				}
+				
 			}
 		}
 	}
+	@include responsive(0,750px) {
+		margin: 80px 0;
+	}	
 }

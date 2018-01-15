@@ -11,10 +11,20 @@
 @import 'sliderpage.scss';
 @import 'medias.scss';
 @import 'men.scss';
+@import 'slider-hero.scss';
+
+@mixin responsive($smallerValue,$biggerValue) {
+  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
+    @content;
+  }
+}
 
 html {
 	background: #e5e5e5;
 	width: 100%;   
+	@include responsive(0,750px) {
+		margin:0;
+	}
 }
 body {
 	background: #fff;
@@ -23,5 +33,12 @@ body {
 	height:100%;
 	width:92%;
 	margin:62px auto;
+	@include responsive(0,900px) {
+		
+	}
+	@include responsive(0,750px) {
+		margin:0 auto;
+		
+	}
 }
 textarea, input, button { outline:none; border:none;}

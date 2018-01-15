@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/medias.css",
+	"sources": [
+		"../scss/medias.scss"
+	],
+	"sourcesContent": [
+		"@mixin responsive($smallerValue,$biggerValue) {\r\n  @media (min-width: $smallerValue) and (max-width: $biggerValue) {\r\n    @content;\r\n  }\r\n}\r\n\r\n/*body {\r\n\tfont-size: 0;\r\n}\r\nheader {\r\n\t.wrapper {\r\n\r\n\t}\r\n\t\t&:nth-child() {\r\n\t\t\t@include responsive(0,400px);\r\n\t\t\tdisplay: none;\r\n\t\t}\r\n}*/"
+	],
+	"mappings": "AAMA;;;;;;;;;;;GAWG",
+	"names": []
+}

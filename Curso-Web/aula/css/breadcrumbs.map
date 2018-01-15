@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/breadcrumbs.css",
+	"sources": [
+		"../scss/breadcrumbs.scss"
+	],
+	"sourcesContent": [
+		".breadcrumbs {\r\n\ttext-transform:uppercase;\r\n\tfont-size:12px;\r\n\twidth:100%;\r\n\tmargin-top:30px;\r\n\t.wrapper {\r\n\t\twidth:95%;\t\r\n\t\tmargin: 0 auto;\r\n\t\tul {\r\n\t\t\t\r\n\t\t\tli {\r\n\t\t\t\tdisplay:inline-block;\r\n\t\t\t\tpadding:0 13px;\r\n\t\t\t\ta {\r\n\r\n\t\t\t\t\ttext-decoration:none;\r\n\t\t\t\t\tcolor:#606060;\r\n\t\t\t\t}\r\n\t\t\t\t&:first-child {\r\n\t\t\t\t\tpadding-left:0;\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\t\r\n}"
+	],
+	"mappings": ";AAAA,AAAA,YAAY,CAAC;EACZ,cAAc,EAAC,SAAU;EACzB,SAAS,EAAC,IAAK;EACf,KAAK,EAAC,IAAK;EACX,UAAU,EAAC,IAAK,GAoBhB;;EAxBD,AAKC,YALW,CAKX,QAAQ,CAAC;IACR,KAAK,EAAC,GAAI;IACV,MAAM,EAAE,MAAO,GAgBf;;IAvBF,AAUG,YAVS,CAKX,QAAQ,CAGP,EAAE,CAED,EAAE,CAAC;MACF,OAAO,EAAC,YAAa;MACrB,OAAO,EAAC,MAAO,GASf;;MArBJ,AAaI,YAbQ,CAKX,QAAQ,CAGP,EAAE,CAED,EAAE,CAGD,CAAC,CAAC;QAED,eAAe,EAAC,IAAK;QACrB,KAAK,EAAC,OAAQ,GACd;;MAjBL,AAUG,YAVS,CAKX,QAAQ,CAGP,EAAE,CAED,EAAE,AAQA,YAAY,CAAC;QACb,YAAY,EAAC,CAAE,GACf",
+	"names": []
+}
