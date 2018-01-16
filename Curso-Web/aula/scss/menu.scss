@@ -9,11 +9,42 @@ header {
 		width:95%;
 		margin:0 auto;
 		nav {
-			position:relative;
 			height:100%;
 			width: 100%;
 			border-bottom:1px solid #e5e5e5;
 			padding: 54px 0 54px 0;				
+			.burger {
+				display:none;
+				float: right; 
+				cursor: pointer;	
+				margin-top: -40px;			
+				a {
+					span {
+						display:block;						
+						background:black;  
+						width:40px;
+						height:5px;
+						border-radius:2px;
+						margin: 8px 0;						
+					}
+					&:before {
+						content:'';
+						display:block;						
+						background:black;  
+						width:40px;
+						height:5px;
+						border-radius:2px;
+					}					
+					&:after {
+						content:'';							
+						display:block;						
+						background:black;  
+						width:40px;
+						height:5px;
+						border-radius:2px;
+					}
+				}
+			}		
 			.basic{
 				float: left;
 				display: block;
@@ -54,56 +85,14 @@ header {
 				}
 				@include responsive(0,700px) {
 					width:100%;
-					display:none;
+					display:block;
 				}	
 			}
-			.burger {
-				display:block;
-				position:absolute;
-				right:40px; 
-				cursor: pointer;
-				a {
-					position:absolute;
-					left:0px;
-					top:-10px;
-					&:before {
-						content:'';
-						left:0;
-						top:0px;
-						display:block;
-						position:absolute;
-						background:black;  
-						width:40px;
-						height:5px;
-						border-radius:2px;
-					}
-					span {
-						left:0;
-						top:14px;
-						display:block;
-						position:absolute;
-						background:black;  
-						width:40px;
-						height:5px;
-						border-radius:2px;
-					}
-					&:after {
-						content:'';
-						left:0;
-						bottom:-33px;
-						display:block;
-						position:absolute;
-						background:black;  
-						width:40px;
-						height:5px;
-						border-radius:2px;
-					}
-			}	}
 			.personal{
 				display: block;
 				float:right;
 				a {
-					margin-right: 65px;
+					margin-right: 20px;
 					font-size: 14px;
 					text-decoration:none;
 					color: #303030;
@@ -120,8 +109,7 @@ header {
 				form {
 					font-size: 0;
 					float: right;
-					margin-top:-27px;
-					position:absolute;
+					margin-top:-14px;
 					right:0;
 					input {
 						width:0;			    
@@ -137,7 +125,7 @@ header {
 	   					border-radius: 0;
 						text-decoration:none;
 						color: #606060;
-						margin:0 -3px;
+						margin-left:-2px;
 						i {
 							display: inline-block;
 							font-size: 18px;
@@ -148,8 +136,8 @@ header {
 					}
 					&:hover {
 						input {
-							height: 40px;
-							padding: 20px 1px 16px 5px;	
+							height: 41px;
+							padding: 20px 1px 17px 5px;	
 							width:160px;
 							display:inline-block;
 							font-size:12px;
@@ -166,11 +154,10 @@ header {
 						text-align:center;
 						margin: 10px;
 					}
-				}
+				}				
 				@include responsive(0,900px) {
-					display:none;
+					display:block;
 				}
-				
 				@include responsive(0,700px) {
 					left:90%;
 					height:auto;

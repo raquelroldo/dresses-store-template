@@ -1,0 +1,18 @@
+.ui-menu { 
+	width: 150px; 
+
+}
+
+.ui-accordion .ui-accordion-header {
+	background: #fff;
+	color: #454545;
+	border-color: #fff;
+}
+.ui-accordion .ui-accordion-content {
+	background: #ccc;
+}
+
+#ok {
+	text-decoration: none;
+	color: #000; 
+}
