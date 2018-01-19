@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.burger').click(function(){
+	$('.burger').(function(){
 		$('.basic').show();
 		$('.personal').show();
 	});
