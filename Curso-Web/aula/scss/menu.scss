@@ -14,7 +14,7 @@ header {
 			border-bottom:1px solid #e5e5e5;
 			padding: 54px 0 54px 0;				
 			.burger {
-				display:none;
+				display:block;
 				float: right; 
 				cursor: pointer;	
 				margin-top: -40px;			
@@ -85,7 +85,7 @@ header {
 				}
 				@include responsive(0,700px) {
 					width:100%;
-					display:block;
+					display:none;
 				}	
 			}
 			.personal{
@@ -156,7 +156,7 @@ header {
 					}
 				}				
 				@include responsive(0,900px) {
-					display:block;
+					display:none;
 				}
 				@include responsive(0,700px) {
 					left:90%;
@@ -169,7 +169,7 @@ header {
 					padding:0 14px;
 					text-align:center;
 					font-size:20px;
-					display:block;
+					display:none;
 				}	
 			}				
 		}
