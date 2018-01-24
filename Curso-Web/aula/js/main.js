@@ -1,6 +1,9 @@
 $(document).ready(function(){
-	$('.burger').(function(){
-		$('.basic').show();
-		$('.personal').show();
-	});
+    $('.slider').slick({
+    	dots: false,
+    	infinite: true,
+    	speed:300,
+    	slidesToShow:5,
+    	slidesToScroll:5,
+ 	});
 });

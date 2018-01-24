@@ -1,4 +1,68 @@
-@mixin responsive($smallerValue,$biggerValue) {
+.slider {	
+	width:100%;
+	margin-bottom:60px;
+	padding-left:30px;
+	padding-right:30px;
+	.slick-track {
+		height:292px;
+		margin:0 auto;
+		.slick-slide {
+			width:240px;
+			overflow:hidden;
+			img {
+				width:100%;				
+				margin:5px;
+			}
+		}
+	}
+}	
+.slick-slide {
+    width:240px;
+}
+
+.slick-prev {
+	left:4px;
+	height:292px;
+}
+.slick-next {
+	right:4px;
+	height:292px;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@mixin responsive($smallerValue,$biggerValue) {
   @media (min-width: $smallerValue) and (max-width: $biggerValue) {
     @content;
   }
@@ -47,4 +111,4 @@
 		    font-size: 30px;
 		}
 	}
-}		
+}	*/	

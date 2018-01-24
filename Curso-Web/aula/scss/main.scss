@@ -12,6 +12,7 @@
 @import 'medias.scss';
 @import 'men.scss';
 @import 'slider-hero.scss';
+/*@import 'teste-slick.scss';*/
 
 @mixin responsive($smallerValue,$biggerValue) {
   @media (min-width: $smallerValue) and (max-width: $biggerValue) {
