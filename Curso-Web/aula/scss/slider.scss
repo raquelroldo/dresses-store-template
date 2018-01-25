@@ -61,8 +61,8 @@
 					}
 				}
 				@include responsive(0,400px) {
-					width: 64%;
-					margin-left:56px;
+					width:100%;
+					margin:auto;
 					&:nth-child(3n+1) {
 						display:none;						
 					}
