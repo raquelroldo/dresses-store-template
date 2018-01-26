@@ -36,7 +36,14 @@
 				box-sizing:border-box;
 				text-decoration: none;
 				display:inline-block;
-			}
+					@include responsive(0,400px) {
+					width: 231px;
+				    height: 50px;  
+				    font-size: 14px;
+				    padding: 16px;
+				    margin-left:-19px
+				}	
+			}			
 		}
 	}	
 }

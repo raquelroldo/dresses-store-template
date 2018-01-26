@@ -1,0 +1,78 @@
+<div class="gallery">
+  <img src="https://lumiere-a.akamaihd.net/v1/images/swbfii_keyart_clean_final_flat_8d03e069.jpeg?region=0%2C37%2C1024%2C576&width=600">
+  
+  <ul>
+    <li>
+      <img data-big-picture="https://lumiere-a.akamaihd.net/v1/images/pt_sws-8_last-jedi_lg_r_63b25075.png" src="https://cdn.uploadvr.com/wp-content/uploads/2016/05/star-wars-new-hope-poster.jpg">
+    </li>
+    <li>
+      <img data-big-picture="https://www.meups4.com.br/wp-content/uploads/2017/06/Battlefront-2.jpg" src="https://lc-www-live-s.legocdn.com/r/www/r/catalogs/-/media/catalogs/videos/star%20wars/primary%20image/75187_inboxing_keyframe.jpg">
+    </li>
+  </ul>
+</div>
+
+/*sass*/
+body, html {
+  height:100%;
+  position:relative;
+}
+.gallery {
+  width:600px;
+  height:320px;
+  background:red;
+  margin:0 auto;
+  position:relative;
+  img {
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+  }
+  ul {
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    z-index:10;
+    width:50px;
+    li {
+      width:50px;
+      margin-top:10px;
+      height:50px;
+        border:1px solid white;
+        img {
+          width:100%;
+          position:relative;
+          }
+    }
+  }
+}
+
+/*jquery*/
+$(document).ready(function(){
+  
+  $('.gallery ul li img').click(function(){
+    var img = $(this).attr('data-big-picture');
+    console.log(img);
+    
+    
+  })
+ 
+  
+  /*var menuState = 'close';
+ 
+  $('.btn').click(function(){
+    if(menuState == 'close'){
+      $('aside').addClass('open');
+      menuState = 'Open';
+      $('.btn').text('X');
+    }else{
+      $('aside').removeClass('open');
+      menuState = 'close';
+      $('.btn').text('Open');
+    }
+  });
+  */
+  
+  
+})
+

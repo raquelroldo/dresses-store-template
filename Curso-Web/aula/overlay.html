@@ -1,0 +1,77 @@
+<ul>
+  <li>
+    <img src="https://img.youtube.com/vi/wvkZp4XiKsg/1.jpg" data-id="wvkZp4XiKsg">
+  </li>
+  <li>
+    <img src="https://img.youtube.com/vi/Bdb_vBD9LJQ/1.jpg" data-id="Bdb_vBD9LJQ">
+  </li>
+  <li>
+    <img src="https://img.youtube.com/vi/kygn6QpxlOk/1.jpg" data-id="kygn6QpxlOk">
+  </li>
+</ul>
+
+/*sass*/
+
+body, html {
+  height:100%;
+  position:relative;
+  text-align:center;
+}
+
+.overlay {
+  height:100%;
+  width:100%;
+  background:rgba(0,0,0,0.7);
+  position:fixed;
+  display:none;
+  left:0;
+  top:0;
+  .movie {
+    width:560px;
+    height:315px;
+    transform:translate(-50%, -50%);
+    position:relative;
+    top:50%;
+    left:50%;
+    border:2px solid white;
+    border-radius:5px;
+  }
+}
+
+ul {
+  display:inline-block;
+  margin:50px 0 0 0;
+  li {
+    display:inline-block;
+    width:300px;
+    img {
+      width:100%;
+    }
+  }
+}
+
+/*js*/
+
+ $('ul li img').click(function(){
+    
+    var videoURL = $(this).attr('data-id');
+    var finalURLVideo = 'https://www.youtube.com/embed/'+ videoURL +'?rel=0&amp;showinfo=0'
+    console.log(finalURLVideo)
+    
+    $('.overlay .movie iframe').attr('src', finalURLVideo);
+    
+    console.log($('iframe').attr('src'))
+    
+    $('.overlay').show(500);
+    
+  })
+  
+  
+  $('.overlay').click(function(){
+    $(this).hide(500);
+    $('.overlay .movie iframe').attr('src', '');
+  })
+  
+  
+})
+})
