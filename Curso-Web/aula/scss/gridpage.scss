@@ -6,7 +6,6 @@
 
 .gridpage {
 	margin-top: 70px;
-	width: 100%;
 	text-align:center;
 	.wrapper {
 		width:100%;
@@ -29,23 +28,23 @@
 			font-size:10px;
 			}
 		}
-		#grid-1, #grid-2, #grid-3 {
-			width: 100%;
-			height: 400px;
-			
+		.list {
+			width:100%;
 			ul {
 				width:100%;
-
 				li {
-					.li_container {
-						border:1px solid #e5e5e5;
-						width:198px;
-						height:257px;
-					}
-					margin:63px 40px 33px 40px;
+					margin:60px 48px 125px 48px;
 					display: inline-block;
-					width:206px;
-					height:333px;
+					width:200px;
+					.li_container {
+						overflow:hidden;
+						border:1px solid #e5e5e5;
+						width:100%;
+						height:255px;
+						img {
+							
+						}
+					}					
 					&:first-child {
 						margin-left:0;
 					}
@@ -62,64 +61,46 @@
 						p {
 
 						}
-					}
-					@include responsive(0,1186px) {
-						margin:63px 20px 33px 24px;					
-						width:180px;
-						height:333px;
-						&:first-child {
+					}	
+					@include responsive(0,1300px) {
+						margin: 50px 30px 145px 30px;
+					}				
+					@include responsive(0,1182px) {
+						margin: 40px 16px 110px 16px;
+					}	
+					@include responsive(0,1090px) {
+						margin: 40px 10px 110px 10px;
+						width:200px;
+					}	
+					@include responsive(0,965px) {
+						margin: 40px 0 110px 35px;
+						&:last-child {
+							display:none;
+						}
+					}	
+					@include responsive(0,787px) {
+						margin: 25px 0 65px 35px;
+						&:nth-child(2){
 							margin-left:0;
+							margin-right:0;
 						}
-						&:last-child {
-							margin-right:10px;
+						&:first-child {							
+							display:none;
 						}
-					}
-					@include responsive(0,966px) {
-						&:last-child {
+						&:last-child {							
 							display:none;
 						}
 					}
-					@include responsive(0,750px) {
-						width:205px;
-						height:333px;
-						&:first-child {
-							display:none;
-						}
-						&:last-child {
-							display:none;
-						}
-					}
-					@include responsive(0,563px) {
-						margin:37px 28px 33px 1px;					
-						width:170px;
-						height:333px;
-						&:first-child {
-							display:none;
-						}
-						&:last-child {
-
-							display:none;
-						}
-					}
-					@include responsive(0,466px) {
+					@include responsive(0,549px) {
+						margin: 40px 30px 65px 0;
 						display:none;
-						&:first-child {
-							display:block;
-							transform:translate(50%, -50%);
+						&:first-child {							
+							display:inline-block;
+							margin-left:25px;
 						}
-					}
+					}	
 				}
 			}
-		}
-		div {
-			height:40px;
-			width:100%;
-			display:inline-block;
-			a {
-				border:1px solid #959595;
-				width:20px;
-				height:20px;
-			}
-		}
+		}		
 	}	
 }

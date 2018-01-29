@@ -1,4 +1,4 @@
-/*@mixin responsive($smallerValue,$biggerValue) {
+@mixin responsive($smallerValue,$biggerValue) {
   @media (min-width: $smallerValue) and (max-width: $biggerValue) {
     @content;
   }
@@ -10,21 +10,10 @@ header {
 	.wrapper {
 		width:95%;
 		margin:0 auto;
-		input[id="bt_menu"] + label {
-				background:#ccc;
-				color: fff;
-				padding: 5px;
-				cursor: pointer;
-				text-align: center;
-				font-size: 30px;
-				width: 50px;
-				height: 50px;
-			}	
 		nav {
 			height:116px;
 			width: 100%;
 			border-bottom:1px solid #e5e5e5;
-
 			.basic{
 				float: left;
 				display: block;
@@ -69,16 +58,21 @@ header {
 					text-decoration:none;
 					color: #303030;
 					span {
-						color: #f68236;
+						color: #303030;
+						&:hover {
+							color:#f68236
+						}
 					}
 				}						
 				form {
 					font-size: 0;
-					margin-top: -18px;
-					
-				
+					float: right;
+					margin-top:-14px;
+					right:0;
 					input {
-						width:0;
+						width:0;			    
+						border: 1px solid #959595;	
+						border-right:none;
 						font-style: italic;
 						transition: all 0.5s ease-in-out;
 					}
@@ -89,18 +83,21 @@ header {
 	   					border-radius: 0;
 						text-decoration:none;
 						color: #606060;
-						.fa {
+						margin-left:-2px;
+						i {
 							display: inline-block;
-							padding: 13px 7px 7px 7px;
 							font-size: 18px;
+							padding: 9px 5px 0px 5px;
+						    height: 37px;
+						    width: 30px;
 						}
 					}
 					&:hover {
 						input {
-							width:150px;
-							margin-left:15px;
+							height: 41px;
+							padding: 20px 1px 17px 5px;	
+							width:160px;
 							display:inline-block;
-							padding: 18px 15px 8px 10px;
 							font-size:12px;
 							border: 1px solid #959595;	
 							border-right: none;
@@ -108,11 +105,10 @@ header {
 						button {
 							background: #606060;
 							color: #fff;
-
 						}
 					}
 				}
 			}	
 		}
 	}
-}*/
+}
