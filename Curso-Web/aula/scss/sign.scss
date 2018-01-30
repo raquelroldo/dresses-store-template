@@ -1,8 +1,4 @@
-@mixin responsive($smallerValue,$biggerValue) {
-  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
-    @content;
-  }
-}
+@import 'medias.scss';
 
 .sign {
 	margin: 147px 0 135px 0;

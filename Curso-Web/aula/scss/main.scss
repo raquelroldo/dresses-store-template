@@ -10,13 +10,8 @@
 @import 'breadcrumbs.scss';
 @import 'sliderpage.scss';
 @import 'medias.scss';
-@import 'slider-hero.scss';
+@import 'thumbnail.scss';
 
-@mixin responsive($smallerValue,$biggerValue) {
-  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
-    @content;
-  }
-}
 
 html {
 	background: #e5e5e5;

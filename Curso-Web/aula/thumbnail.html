@@ -1,4 +1,46 @@
-<div class="gallery">
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    body, html {
+      height:100%;
+      position:relative;
+    }
+    .gallery {
+      width:600px;
+      height:320px;
+      background:red;
+      margin:0 auto;
+      position:relative;
+      img {
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+      }
+      ul {
+        position:absolute;
+        right:10px;
+        bottom:10px;
+        z-index:10;
+        width:50px;
+        li {
+          width:50px;
+          margin-top:10px;
+          height:50px;
+          border:1px solid white;
+          img {
+            width:100%;
+            position:relative;
+          }
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
   <img src="https://lumiere-a.akamaihd.net/v1/images/swbfii_keyart_clean_final_flat_8d03e069.jpeg?region=0%2C37%2C1024%2C576&width=600">
   
   <ul>
@@ -10,44 +52,7 @@
     </li>
   </ul>
 </div>
-
-/*sass*/
-body, html {
-  height:100%;
-  position:relative;
-}
-.gallery {
-  width:600px;
-  height:320px;
-  background:red;
-  margin:0 auto;
-  position:relative;
-  img {
-    width:100%;
-    position:absolute;
-    left:0;
-    top:0;
-  }
-  ul {
-    position:absolute;
-    right:10px;
-    bottom:10px;
-    z-index:10;
-    width:50px;
-    li {
-      width:50px;
-      margin-top:10px;
-      height:50px;
-        border:1px solid white;
-        img {
-          width:100%;
-          position:relative;
-          }
-    }
-  }
-}
-
-/*jquery*/
+<script type="text/javascript">
 $(document).ready(function(){
   
   $('.gallery ul li img').click(function(){
@@ -57,8 +62,7 @@ $(document).ready(function(){
     
   })
  
-  
-  /*var menuState = 'close';
+  var menuState = 'close';
  
   $('.btn').click(function(){
     if(menuState == 'close'){
@@ -71,8 +75,11 @@ $(document).ready(function(){
       $('.btn').text('Open');
     }
   });
-  */
-  
-  
 })
+</script>
+
+</body>
+</html>
+
+
 
