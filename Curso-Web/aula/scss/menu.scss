@@ -9,12 +9,12 @@ header {
 			height:100%;
 			width: 100%;
 			border-bottom:1px solid #e5e5e5;
-			padding: 54px 0 54px 0;				
+			padding: 45px 0 54px 0;				
 			.burger {
 				display:none;
-				float: right; 
+				float: right;
 				cursor: pointer;	
-				margin-top: -15px;			
+				margin-top: -8px;			
 				a {
 					span {
 						display:block;						
@@ -52,6 +52,7 @@ header {
 				float: left;
 				display: block;
 				ul {
+
 					width:100%;
 					li {
 						font-size: 15px;
@@ -99,6 +100,11 @@ header {
 					font-size: 14px;
 					text-decoration:none;
 					color: #303030;
+					span{
+						&:hover {
+							color:#f68236
+						}
+					}
 					@include responsive(0,700px) {
 						font-size:20px;
 						display:block;
@@ -178,3 +184,4 @@ header {
 		}
 	}
 }
+

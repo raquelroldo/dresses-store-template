@@ -35,6 +35,17 @@
 					}
 				}
 			}
+			@include responsive(0,930px) {
+				width:100%;			
+			}
+			@include responsive(0,490px) {
+				width:100%;	
+				height:465px;
+			}
+			@include responsive(0,430px) {
+				width:100%;	
+				height:390px;
+			}
 		}
 		.product-detail {
 			text-align: center;
@@ -51,19 +62,39 @@
 				font-family: 'Lato', sans-serif;
 				font-size: 17px;
 				color:#606060;
-				white-space:initial;
-				&:span {
+				span {					
 					font-style: italic;
 					font-size: 17px;
 					color:#959595;
 				}
 			}
 			.price {
+				margin: 35px 0;
+   				display: block;
 				font-style: italic;
 				font-size: 20px;
-				color:#606060;
+				color:#303030;
 				font-family: 'Georgia';
 			}
+			.size {
+				display:inline-block;
+				p {
+				font-size:20px;
+				margin: 15px;
+   				color: #303030;
+				}
+				a {
+					text-decoration:none;
+					color: #303030;
+					span {
+						margin:5px;
+						padding:8px;
+						border:1px solid #606060;
+						font-size:15px;
+					}
+				}
+			}
 		}	
+		
 	}
 }		
