@@ -1,10 +1,10 @@
 @import 'medias.scss';
 
 .slider {
-  	
+  	height:400px;
 	.wrapper {
 	    width: 95%;
-	   	height:240px;
+	    height:240px;
 	    margin: 0 auto;
 	    position: relative;
 	    .lookbook {
@@ -80,6 +80,20 @@
 					}
 				}
 	      	}
+	    }
+	    .more-clothes {
+	    	margin: 35px 0;
+	    	display:block;
+	    	text-align:center;
+	    	background: #e5e5e5;
+	    	text-transform:uppercase;
+	    	padding:15px;
+	    	a {
+	    		text-decoration:none;
+	    		font-family: 'Lato', sans-serif;
+				font-size: 14px;
+				color:#606060;
+	    	}
 	    }
 	}
 }
