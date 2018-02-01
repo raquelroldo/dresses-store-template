@@ -1,8 +1,5 @@
-@mixin responsive($smallerValue,$biggerValue) {
-  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
-    @content;
-  }
-}
+@import 'medias.scss';
+
 header {
 	width: 100%;
 	.wrapper {
@@ -17,7 +14,7 @@ header {
 				display:block;
 				float: right; 
 				cursor: pointer;	
-				margin-top: -40px;			
+				margin-top: -15px;			
 				a {
 					span {
 						display:block;						
@@ -44,6 +41,12 @@ header {
 						border-radius:2px;
 					}
 				}
+				@include responsive(0,900px) {
+					display:block;
+				}	
+				@include responsive(0,700px) {
+					display:block;
+				}		
 			}		
 			.basic{
 				float: left;

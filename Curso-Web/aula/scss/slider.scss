@@ -1,114 +1,67 @@
-.slider {	
-	width:100%;
-	margin-bottom:60px;
-	padding-left:30px;
-	padding-right:30px;
-	.slick-track {
-		height:292px;
-		margin:0 auto;
-		.slick-slide {
-			width:240px;
-			overflow:hidden;
-			img {
-				width:100%;				
-				margin:5px;
-			}
-		}
-	}
-}	
-.slick-slide {
-    width:240px;
-}
+@import 'medias.scss';
 
-.slick-prev {
-	left:4px;
-	height:292px;
-}
-.slick-next {
-	right:4px;
-	height:292px;
-}	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*@mixin responsive($smallerValue,$biggerValue) {
-  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
-    @content;
-  }
-}
-
-.slider {	
-	margin-bottom:48px;
-	width:100%;
+.slider {
 	.wrapper {
-		width:95%;
-		margin:0 auto;
-		position: relative;
-		.left {
-			display: inline-block;	
-			height: 119px;
-		    position: absolute;
+	    width: 95%;
+	    height: 240px;
+	    margin: 0 auto;
+	    position: relative;
+	    .left {
+	    	position:absolute;
+	     	height: 180px;
+	      	color: #fff;
+	      	background: #eee;
+	      	font-size: 30px;
+	      	z-index:4;
+	    }
+	    .right {
+		    height: 180px;
+		    position:absolute;
+		    right:0;
+		    z-index:4;
 		    color: #ffffff;
 		    font-size: 30px;
-		}
-		ul {	
-			width:100%;
-			height:119px;
-			background-color:#bbbbbb;
-			li {
-				display:inline-block;
-				height: 100px;
-				width: 180px;
-				overflow: hidden;
-				img {
-					height: 90px;
-					display:block;
-					padding: 15px 19px;
+		    background: #eee;
+	  	}
+	    .slider-images {
+		    height: 180px;
+		    width: 100%;
+		    list-style: none;		  
+		    background-color: #bbb;
+	      	li {
+	       		float:left;
+	        	overflow: hidden;
+	        	height: 180px;
+	        	width: 19%;
+	       		img {
+		        	width:100%;
+		        	margin:10px;	
+		        }
+		        &:first-child {
+						margin-left:25px;
+					}
+		        @include responsive(0,950px) {
+					width: 30%;
+					
+					&:nth-child(2n+0) {
+						display:none;
+					}
 				}
-			}
-			@include responsive(0,750px) {
-				height:160px;	
-			}
-		}
-		.right {
-			right: 0;
-			top: 0;
-			display: inline-block;	
-			height: 119px;
-		    position: absolute;
-		    color: #ffffff;
-		    font-size: 30px;
-		}
+				@include responsive(0,500px) {
+					width: 43%;
+					
+					&:nth-child(3n+0) {
+						display:none;
+					}
+				}
+				@include responsive(0,400px) {
+					width:100%;
+					margin:auto;
+					&:nth-child(3n+1) {
+						display:none;						
+					}
+				}
+	      	}
+	    }
 	}
-}	*/	
+}

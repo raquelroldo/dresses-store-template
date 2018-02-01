@@ -1,15 +1,14 @@
-@mixin responsive($smallerValue,$biggerValue) {
-  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
-    @content;
-  }
-}
+@import 'medias.scss';
 
 footer {
 	width:calc(100% - 64px);
 	display:inline-block;
 	text-align:left;
-	margin: 0 32px 55px 32px;
+	margin:25px 32px 55px 32px;
 	position:relative;
+	.footer-list{
+	    margin-top:30px
+	}
 	dl {
 		padding-left: 20px;
 		display:inline-block;
