@@ -1,4 +1,3 @@
-@import 'menu.scss';
 @import 'reset.scss';
 @import 'grid.scss';
 @import 'intro.scss';
@@ -6,19 +5,10 @@
 @import 'footer.scss';
 @import 'slider.scss';
 @import 'gridpage.scss';
-@import 'menupage.scss';
+@import 'menu.scss';
 @import 'breadcrumbs.scss';
-@import 'sliderpage.scss';
 @import 'medias.scss';
-@import 'men.scss';
-@import 'slider-hero.scss';
-/*@import 'teste-slick.scss';*/
-
-@mixin responsive($smallerValue,$biggerValue) {
-  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
-    @content;
-  }
-}
+@import 'thumbnail.scss';
 
 html {
 	background: #e5e5e5;

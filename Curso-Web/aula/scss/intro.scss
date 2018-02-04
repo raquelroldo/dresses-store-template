@@ -1,16 +1,11 @@
-@mixin responsive($smallerValue,$biggerValue) {
-  @media (min-width: $smallerValue) and (max-width: $biggerValue) {
-    @content;
-  }
-}
-
+@import 'medias.scss';
 .intro {
 	.wrapper {
 		width:95%;
 		margin: 0 auto;
 		.h {
 			text-align: center;
-			margin: 150px 0;
+			margin: 150px auto;
 			
 			h1 {
 				color:#303030;
@@ -19,7 +14,7 @@
 				margin-bottom:37px;
 			}
 			h3 {
-				font-family: georgia;
+				font-family: 'Georgia';
 				font-style: italic;
 				font-size: 24px;
 				color:#606060;
@@ -36,7 +31,14 @@
 				box-sizing:border-box;
 				text-decoration: none;
 				display:inline-block;
-			}
+					@include responsive(0,400px) {
+					width: 231px;
+				    height: 50px;  
+				    font-size: 14px;
+				    padding: 16px;
+				    margin-left:-19px
+				}	
+			}			
 		}
 	}	
 }

@@ -1,3 +1,4 @@
+@import 'medias.scss';
 .breadcrumbs {
 	text-transform:uppercase;
 	font-size:12px;
@@ -12,14 +13,16 @@
 				display:inline-block;
 				padding:0 13px;
 				a {
-
 					text-decoration:none;
 					color:#606060;
 				}
 				&:first-child {
 					padding-left:0;
-				}
+				}				
 			}
 		}
+	}
+	@include responsive(0,400px) {
+		display:none;
 	}	
 }
