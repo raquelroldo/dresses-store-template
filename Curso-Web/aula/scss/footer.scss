@@ -52,10 +52,6 @@ footer {
 			a {
 				color: #606060;
 			}
-			@include responsive(0,750px) {
-				display:none;
-				padding:5px;
-			}	
 		}
 		&:first-child {
 			padding-left: 0;
@@ -72,15 +68,12 @@ footer {
 			padding:0;
 			width:70%;
 			height:auto;
-
-			&:hover {
-				dd {
-					display:block;
-					font-size:16px;
-				}
-				p {
-					display:inline-block;
-				}
+			dd {
+				
+				font-size:16px;
+			}
+			p {
+				display:inline-block;
 			}
 		}
 	}
