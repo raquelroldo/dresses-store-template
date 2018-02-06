@@ -9,6 +9,12 @@ footer {
 	.footer-list{
 	    margin-top:30px
 	}
+	.container{
+		@include responsive(0,400px) {
+			margin-top: 190px;
+		}
+		margin-top: 100px;
+	}
 	dl {
 		padding-left: 20px;
 		display:inline-block;

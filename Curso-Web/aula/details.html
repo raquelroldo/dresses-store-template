@@ -34,12 +34,14 @@
 	<link href="images/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
 	<!--favicon-->
 	<link rel="shortcut icon" href="images/system/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/slick.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" type="image/ico" href="images/system/favicon.ico" />
 	<!--Font-->
 	
 	<!--Links-->
 	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/main.css">
 </head>
 <!--GA-->
 <script>
@@ -54,12 +56,14 @@
 <body>
 	<header>
 		<div class="wrapper">
-			<nav><div class="burger">
+			<nav>
+				<div class="burger">
 					<a href="#">
 						<span></span>
 					</a>
 				</div>
-				<div class="basic">
+
+				<div data-isActive=false class="basic">
 					<ul>
 						<li><a href="">SH</a></li>
 						<li><a href="">Woman</a></li>
@@ -70,7 +74,7 @@
 					</ul>
 				</div>
 				
-				<div class="personal">
+				<div data-isActive="false" class="personal">
 					<a href="#"><i class="fa fa-user" aria-hidden="true"></i> Log In</a>
 					<a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Basket (0)</a>
 					<form>
@@ -124,54 +128,71 @@
 					<h3>You may also like</h3>
 				</div>
 			</div>
-			<div>
-				<button class="left"><</button>
-				<button class="right">></button>
-				<ul class="slider-images">
-					<li><img src="images/Spring_Summer17-22-200.jpg"></li>
-					<li><img src="images/Spring_Summer17-42-200.jpg"></li>
-					<li><img src="images/flowers-dress200.jpg"></li>
-					<li><img src="images/Spring_Summer17-9-200.jpg"></li>
-					<li><img src="images/Spring_Summer17-24-200.jpg"></li>
-				</ul>	
+			<div class="slider-container">
+				<div class="slider-images">
+					
+						<div><img src="images/Spring_Summer17-22-200.jpg"></div>
+						<div><img src="images/Spring_Summer17-42-200.jpg"></div>
+						<div><img src="images/flowers-dress200.jpg"></div>
+						<div><img src="images/Spring_Summer17-9-200.jpg"></div>
+						<div><img src="images/Spring_Summer17-24-200.jpg"></div>
+						<div><img src="images/Spring_Summer17-22-200.jpg"></div>
+						<div><img src="images/Spring_Summer17-42-200.jpg"></div>
+						<div><img src="images/flowers-dress200.jpg"></div>
+						<div><img src="images/Spring_Summer17-9-200.jpg"></div>
+						<div><img src="images/Spring_Summer17-24-200.jpg"></div>
+						<div><img src="images/Spring_Summer17-22-200.jpg"></div>
+						<div><img src="images/Spring_Summer17-42-200.jpg"></div>
+						<div><img src="images/flowers-dress200.jpg"></div>
+				
+				</div>	
 			</div>
 			<div class="more-clothes">
 				<a href="#">Show me more related clothes</a>
 			</div>	
 		</div>
 	</section>
-	<footer>
-		<dl>
-			<dt>Collection</dt>
-			<dd><a href=""></a>Woman (1725)</dd>
-			<dd><a href=""></a>Men (635)</dd>
-			<dd><a href=""></a>Kids (2514)</dd>
-			<dd><a href=""></a>Comming Soon (76)</dd>
-		</dl>
 
-		<dl>
-			<dt>Site</dt>
-			<dd><a href=""></a>Terms of Service</dd>
-			<dd><a href=""></a>Privacy Policy</dd>
-			<dd><a href=""></a>Copyright Policy</dd>
-			<dd><a href=""></a>Press Kit</dd>
-			<dd><a href=""></a>Support</dd>
-		</dl>
-		<dl>
-			<dt>Shop</dt>
-			<dd><a href=""></a>About us</dd>
-			<dd><a href=""></a>Shipping Metods</dd>
-			<dd><a href=""></a>Carrer</dd>
-			<dd><a href=""></a>Contact</dd>
-		</dl>
-		<dl>
-			<dt>Social</dt>
-			<dd>Shoper is made with love in Warsaw,</dd>
-			<dd>2014 <i class="fa fa-copyright" aria-hidden="true"></i> All rights reserved. El Passion</dd>
-			<p><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
-			<p><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
-			<p><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
-		</dl>
+	<footer>
+		<div class="container">
+			<dl>
+				<dt>Collection</dt>
+				<dd><a href=""></a>Woman (1725)</dd>
+				<dd><a href=""></a>Men (635)</dd>
+				<dd><a href=""></a>Kids (2514)</dd>
+				<dd><a href=""></a>Comming Soon (76)</dd>
+			</dl>
+
+			<dl>
+				<dt>Site</dt>
+				<dd><a href=""></a>Terms of Service</dd>
+				<dd><a href=""></a>Privacy Policy</dd>
+				<dd><a href=""></a>Copyright Policy</dd>
+				<dd><a href=""></a>Press Kit</dd>
+				<dd><a href=""></a>Support</dd>
+			</dl>
+			<dl>
+				<dt>Shop</dt>
+				<dd><a href=""></a>About us</dd>
+				<dd><a href=""></a>Shipping Metods</dd>
+				<dd><a href=""></a>Carrer</dd>
+				<dd><a href=""></a>Contact</dd>
+			</dl>
+			<dl>
+				<dt>Social</dt>
+				<dd>Shoper is made with love in Warsaw,</dd>
+				<dd>2014 <i class="fa fa-copyright" aria-hidden="true"></i> All rights reserved. El Passion</dd>
+				<p><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+				<p><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
+				<p><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
+			</dl>
+		</div>
 	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/slick.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
