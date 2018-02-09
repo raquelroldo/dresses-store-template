@@ -40,25 +40,25 @@ footer {
 				color: #303030;
 				text-decoration: none;	
 			}
+			p {
+				float:left;
+				border: 1px solid #606060;
+				box-sizing:border-box;
+				width: 32px;
+				height: 32px;
+				text-align: center;
+				padding: 3px 0;
+				font-size: 14px;
+				margin-right: 2px;
+				a {
+					color: #606060;
+				}
+			}
 			@include responsive(0,750px) {
 				display:none;	
 			}
 		}
-		p {
-			vertical-align: middle;
-			display: inline-block;
-			border: 1px solid #606060;
-			box-sizing:border-box;
-			width: 32px;
-			height: 32px;
-			text-align: center;
-			padding: 9px 0;
-			font-size: 14px;
-			margin-right: 2px;
-			a {
-				color: #606060;
-			}
-		}
+		
 		&:first-child {
 			padding-left: 0;
 			@include responsive(0,750px) {

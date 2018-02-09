@@ -2,6 +2,20 @@ $(document).ready(function(){
 
 	$( window ).resize(function() {
 
+		if(window.innerWidth > 750){
+			showFooterItem(".collection-item");
+			showFooterItem(".site-item");
+			showFooterItem(".shop-item");
+			showFooterItem(".social-item");
+		}
+
+		if(window.innerWidth <= 750){
+			hideFooterItem(".collection-item");
+			hideFooterItem(".site-item");
+			hideFooterItem(".shop-item");
+			hideFooterItem(".social-item");
+		}
+
 		var elementPersonalIsActive = ($('.personal').attr("data-isActive") === 'true');
 		var elementBasicIsActive = ($('.basic').attr("data-isActive") === 'true');
 
@@ -97,5 +111,45 @@ $(document).ready(function(){
 		]
 
 	});
+
 	
+	$('#collection').click(function(){
+		toogleFooterItem('.collection-item');
+	});
+
+	$('#site').click(function(){
+		toogleFooterItem('.site-item');
+	});
+
+	$('#shop').click(function(){
+		toogleFooterItem('.shop-item');
+	});
+
+	$('#social').click(function(){
+		toogleFooterItem('.social-item');
+	});
+
+	function toogleFooterItem(className){
+		if (window.matchMedia("(max-width: 748px)").matches) {
+			$(className).toggle('slow');
+		} 
+	}
+
+	function showFooterItem(className){
+		$(className).css("display", "block");	
+	}
+
+	function hideFooterItem(className){
+		$(className).css("display", "none");	
+	}
+
+
+
+	$(".slick-slide.slick-active img").click(function(){
+		$(".overlay")
+		var imgSrc = $(this).attr('data-id');
+		$(".image img").attr("src", imgSrc);
+		$(this).dialog();
+	})
+
 });
