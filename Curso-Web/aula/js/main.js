@@ -71,6 +71,12 @@ $(document).ready(function(){
 		$(className).attr("data-isactive", false);
 	}
 
+	$('.slider-images div img').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		gallery: { enabled:true }
+	});
 
 	$('.slider-images').slick({
 
@@ -143,13 +149,5 @@ $(document).ready(function(){
 		$(className).css("display", "none");	
 	}
 
-
-
-	$(".slick-slide.slick-active img").click(function(){
-		$(".overlay")
-		var imgSrc = $(this).attr('data-id');
-		$(".image img").attr("src", imgSrc);
-		$(this).dialog();
-	})
 
 });
