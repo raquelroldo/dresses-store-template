@@ -42,6 +42,7 @@ $(document).ready(function(){
 
 	$(".burger").click(function(){
 		
+		
 		var elementPersonalIsActive = ($('.personal').attr("data-isActive") === 'true');
 		var elementBasicIsActive = ($('.basic').attr("data-isActive") === 'true');
 		
@@ -62,61 +63,16 @@ $(document).ready(function(){
 	});
 
 	function showContent(className){
+		debugger
 		$(className).addClass("show-content");
 		$(className).attr("data-isactive", true);
 	}
 
 	function hideContent(className){
+		debugger
 		$(className).removeClass("show-content");
 		$(className).attr("data-isactive", false);
 	}
-
-	$('.slider-images div img').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		closeBtnInside: false,
-		gallery: { enabled:true }
-	});
-
-	$('.slider-images').slick({
-
-		arrows: true,
-		infinite: true,
-		speed: 100,
-		slidesToShow: 5,
-		slidesToScroll: 5,
-		responsive: [
-			{
-				breakpoint: 1050,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 4
-				}
-			},
-			{
-				breakpoint: 950,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3
-				}
-			},
-			{
-				breakpoint: 700,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3
-				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
-
-	});
 
 	
 	$('#collection').click(function(){
