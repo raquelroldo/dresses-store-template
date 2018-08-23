@@ -39,11 +39,12 @@
 	
 	<!--Links-->
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/slick.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+	<link href="javascript/magnific-popup/css/magnific-popup.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<!--GA-->
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -63,7 +64,7 @@
 						<span></span>
 					</a>
 				</div>
-				<div class="basic">
+				<div data-isActive="false" class="basic">
 					<ul>
 						<li><a href="loja.html">SH</a></li>
 						<li><a href="category.html">Vestidos</a></li>
@@ -73,7 +74,7 @@
 						<li><a href="#">About</a></li>
 					</ul>
 				</div>
-				<div class="personal">
+				<div data-isActive="false" class="personal">
 					<a href="#"><i class="fa fa-user" aria-hidden="true"></i> Log In</a>
 					<a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Basket (0)</a>
 					<form>
@@ -129,15 +130,26 @@
 	</section>
 	<section class="slider">
 		<div class="wrapper">
-			<button class="left"><</button>
-			<button class="right">></button>
-			<ul class="slider-images">
-				<li><img src="images/Spring_Summer17-22-200.jpg"></li>
-				<li><img src="images/Spring_Summer17-42-200.jpg"></li>
-				<li><img src="images/flowers-dress200.jpg"></li>
-				<li><img src="images/Spring_Summer17-9-200.jpg"></li>
-				<li><img src="images/Spring_Summer17-24-200.jpg"></li>
-			</ul>	
+			
+			<div class="slider-container">
+				<div class="slider-images">					
+					<div><img src-target="images/Spring_Summer17-22-1080x1577.jpg" src="images/Spring_Summer17-22-200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-42-1080x1577.jpg" src="images/Spring_Summer17-42-200.jpg"></div>
+					<div><img src-target="images/flowers-dress.jpg" src="images/flowers-dress200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-9-1080x1577.jpg" src="images/Spring_Summer17-9-200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-24-1080x1577.jpg" src="images/Spring_Summer17-24-200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-7-1080x1577.jpg" src="images/Spring_Summer17-7-200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-12-1080x1577.jpg" src="images/Spring_Summer17-12-200.jpg"></div>
+					<div><img src-target="images/pink-dress.jpg" src="images/pink-dress200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-15-1080x1577.jpg" src="images/Spring_Summer17-15-200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-17-1080x1577.jpg" src="images/Spring_Summer17-17-200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-18-1080x1577.jpg" src="images/Spring_Summer17-18-200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-19-1080x1577.jpg" src="images/Spring_Summer17-19-200.jpg"></div>
+					<div><img src-target="images/green-dress.jpg" src="images/green-dress200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-20-1080x1577.jpg" src="images/Spring_Summer17-20-200.jpg"></div>
+					<div><img src-target="images/Spring_Summer17-23-1080x1577.jpg" src="images/Spring_Summer17-23-200.jpg"></div>
+				</div>	
+			</div>
 		</div>
 	</section>
 	<footer>
@@ -168,10 +180,17 @@
 			<dt>Social</dt>
 			<dd>Shoper is made with love in Warsaw,</dd>
 			<dd>2014 <i class="fa fa-copyright" aria-hidden="true"></i> All rights reserved. El Passion</dd>
-			<p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
-			<p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
-			<p><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
+			<dd><p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></p></dd>
+			<dd><p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></p></dd>
+			<dd><p><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></p></dd>
 		</dl>
 	</footer>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="javascript/magnific-popup/js/jquery.magnific-popup.js.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/slick.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/carrousel.js"></script>
 </body>
-</html>
+</html> 

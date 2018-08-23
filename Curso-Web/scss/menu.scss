@@ -14,7 +14,8 @@ header {
 				display:none;
 				float: right;
 				cursor: pointer;	
-				margin-top: -8px;			
+				margin-top: -8px;
+				margin-bottom: 2px;			
 				a {
 					span {
 						display:block;						
@@ -89,7 +90,7 @@ header {
 				}
 				@include responsive(0,700px) {
 					width:100%;
-					display:block;
+					display:none;
 					margin-top:2px;
 				}	
 			}
@@ -101,7 +102,7 @@ header {
 					font-size: 14px;
 					text-decoration:none;
 					color: #303030;
-					span{
+					&:span{
 						&:hover {
 							color:#f68236
 						}
@@ -122,7 +123,8 @@ header {
 					margin-top:-14px;
 					
 					input {
-						width:0;			    
+						width:0;	
+						margin-right: -10px;		    
 						border: 1px solid #959595;	
 						border-right:none;
 						font-style: italic;
@@ -171,7 +173,7 @@ header {
 					}
 				}				
 				@include responsive(0,900px) {
-					display:block;
+					display:none;
 					width:37%;
 					clear:both;
 					float:right;
@@ -191,7 +193,7 @@ header {
 					padding:0 14px;
 					text-align:center;
 					font-size:20px;
-					display:block;
+					display:none;
 				}	
 			}				
 		}
